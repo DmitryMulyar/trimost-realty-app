@@ -1,0 +1,1161 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0E2D4A"><link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<title>Тримост Клиент</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Тримост">
+<meta name="theme-color" content="#002C4A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: одна колонка телефона (до 440px), шапка сверху, таб-бар снизу, экраны меняются внутри */
+:root{
+  --navy:#002C4A; --navy-2:#0D3D61; --bronze:#AA6A22; --bronze-soft:#F6ECDF;
+  --bg:#F3F5F7; --panel:#FFFFFF; --ink:#0F2333; --muted:#5D6B78; --line:#DCE2E7; --soft:#E9EEF2;
+  --good:#1F7A4D; --good-soft:#E3F2EA; --warn:#B26B00; --warn-soft:#FBF0DD; --bad:#A3262A; --bad-soft:#F8E6E6;
+  --f:"Golos Text",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --r:14px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{height:100%;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--f);-webkit-tap-highlight-color:transparent}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--navy)}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--bronze);outline-offset:2px}
+.shell{max-width:440px;margin:0 auto;min-height:100%;background:var(--bg);position:relative;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+@media(min-width:480px){.shell{border-left:1px solid var(--line);border-right:1px solid var(--line)}}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* шапка */
+.top{position:sticky;top:0;padding-top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);color:#fff}
+.top .wrap{display:flex;align-items:center;gap:10px;padding-block:10px}
+.top h1{font-size:17px;font-weight:700;margin:0;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.iconbtn{width:38px;height:38px;border-radius:12px;border:0;background:rgba(255,255,255,.1);display:grid;place-items:center;color:#fff;position:relative;flex:none}
+.iconbtn.ava{border-radius:50%;background:#fff;color:var(--navy);font-weight:700;font-size:13px;letter-spacing:.02em;box-shadow:0 0 0 2px rgba(255,255,255,.35)}
+.iconbtn.ava[aria-current]{box-shadow:0 0 0 2px var(--bronze)}
+.iconbtn svg{width:20px;height:20px}
+.dot{position:absolute;top:7px;right:8px;width:8px;height:8px;border-radius:50%;background:var(--bronze);border:2px solid var(--navy)}
+.logo{width:34px;height:34px;flex:none;background:#fff;border-radius:50%;padding:1px}
+
+/* таб-бар */
+.tabs{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,440px);z-index:20;background:var(--panel);border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(5,1fr);padding:6px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px))}
+.tab{border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 0;font-size:11px;font-weight:600;color:var(--muted);border-radius:10px}
+.tab svg{width:22px;height:22px}
+.tab[aria-current="page"]{color:var(--navy)}
+.tab[aria-current="page"] svg{color:var(--bronze)}
+
+main{padding-block:16px 24px;display:grid;gap:14px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.h2{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:6px 2px -4px}
+.row{display:flex;align-items:center;gap:10px}
+.between{justify-content:space-between}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.num{font-variant-numeric:tabular-nums}
+.mono{font-family:var(--mono);font-size:13px;letter-spacing:.02em}
+.ex{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--bronze);background:var(--bronze-soft);border-radius:6px;padding:2px 6px;vertical-align:middle}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.pill.go{background:var(--soft);color:var(--navy)}
+.pill.ok{background:var(--good-soft);color:var(--good)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+
+.btn{border:0;border-radius:12px;padding:13px 16px;font-weight:700;background:var(--navy);color:#fff;width:100%;display:flex;justify-content:center;align-items:center;gap:8px}
+.btn.bronze{background:var(--bronze)}
+.btn.ghost{background:var(--panel);color:var(--navy);border:1.5px solid var(--line)}
+.btn:active{transform:scale(.985)}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+/* приветствие */
+.hello{background:var(--navy);color:#fff;border:0;position:relative;overflow:hidden}
+.hello .muted{color:#B9C8D6}
+.hello b{font-size:20px}
+.hello .arch{position:absolute;right:-18px;bottom:-34px;width:150px;opacity:.16}
+
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.q{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:12px 4px 10px;display:flex;flex-direction:column;align-items:center;gap:6px;font-size:12px;font-weight:600;text-align:center;line-height:1.2}
+.q svg{width:24px;height:24px;color:var(--bronze)}
+
+/* карточка заказа */
+.order{display:grid;gap:10px;text-align:left;width:100%;border:1px solid var(--line);background:var(--panel);border-radius:var(--r);padding:14px}
+.route{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px}
+.city b{display:block;font-size:15px}
+.city span{font-size:12px;color:var(--muted)}
+.city.r{text-align:right}
+.mode{font-size:11px;font-weight:700;color:var(--bronze);text-align:center;letter-spacing:.04em}
+.mode svg{display:block;margin:0 auto;width:40px;height:12px;color:var(--line)}
+.bar{height:6px;border-radius:6px;background:var(--soft);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--bronze);border-radius:6px}
+
+/* табло этапов */
+.steps{list-style:none;margin:0;padding:0}
+.st{display:grid;grid-template-columns:22px 1fr auto;gap:12px;position:relative;padding-bottom:16px}
+.st:last-child{padding-bottom:0}
+.st::before{content:"";position:absolute;left:10px;top:22px;bottom:0;width:2px;background:var(--line)}
+.st:last-child::before{display:none}
+.st.done::before{background:var(--bronze)}
+.mk{width:22px;height:22px;border-radius:50%;border:2px solid var(--line);background:var(--panel);display:grid;place-items:center}
+.st.done .mk{background:var(--bronze);border-color:var(--bronze);color:#fff}
+.st.now .mk{border-color:var(--bronze);box-shadow:0 0 0 4px var(--bronze-soft)}
+.st.now .mk::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--bronze)}
+.mk svg{width:12px;height:12px}
+.st .t{font-weight:600}
+.st:not(.done):not(.now) .t{color:var(--muted);font-weight:500}
+.st .d{font-size:12px;color:var(--muted);text-align:right;white-space:nowrap}
+.st .src{font-size:11.5px;color:var(--muted)}
+
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;text-align:right;font-weight:600;min-width:0;overflow-wrap:anywhere}
+
+.list{display:grid}
+.li{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--line);background:none;border-left:0;border-right:0;border-bottom:0;width:100%;text-align:left}
+.li:first-child{border-top:0;padding-top:2px}
+.li .ic{width:40px;height:40px;border-radius:10px;background:var(--soft);display:grid;place-items:center;flex:none;color:var(--navy);font-size:11px;font-weight:800;letter-spacing:.02em}
+.li .ic.b{background:var(--bronze-soft);color:var(--bronze)}
+.li .tx{flex:1;min-width:0}
+.li .tx b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.li .tx span{font-size:12.5px;color:var(--muted)}
+.chev{width:16px;height:16px;color:var(--muted);flex:none}
+
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{border:1.5px solid var(--line);background:var(--panel);border-radius:999px;padding:7px 13px;font-size:13px;font-weight:600;white-space:nowrap;color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+
+/* формы */
+label.f{display:grid;gap:6px;font-size:13px;font-weight:600;color:var(--muted)}
+.inp{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:12px 13px;background:var(--panel);font-size:16px;color:var(--ink);font-weight:500}
+.inp:focus{border-color:var(--navy);outline:none}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.seg{display:grid;grid-template-columns:repeat(4,1fr);background:var(--soft);border-radius:12px;padding:4px;gap:4px}
+.seg button{border:0;background:none;border-radius:9px;padding:9px 0;font-size:13px;font-weight:700;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--panel);color:var(--navy);box-shadow:0 1px 2px rgba(0,44,74,.12)}
+.swap{border:0;background:var(--soft);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;color:var(--navy);align-self:end;margin-bottom:5px}
+.swap svg{width:18px;height:18px}
+
+.total{background:var(--navy);color:#fff;border:0}
+.total .big{font-size:30px;font-weight:800;letter-spacing:-.01em}
+.total .muted{color:#B9C8D6}
+.total .kv dt{color:#B9C8D6}
+.total hr{border:0;border-top:1px solid rgba(255,255,255,.15);margin:12px 0}
+
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{border:1px solid var(--line);background:var(--panel);border-radius:var(--r);padding:16px 14px;text-align:left;display:grid;gap:8px;min-height:116px;align-content:space-between}
+.tile svg{width:28px;height:28px;color:var(--bronze)}
+.tile b{font-size:16px}
+.tile span{font-size:12.5px;color:var(--muted);line-height:1.3}
+
+/* чат */
+.chat{display:flex;flex-direction:column;gap:8px}
+.msg{max-width:82%;padding:9px 12px;border-radius:14px;font-size:14.5px}
+.msg.them{background:var(--panel);border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:4px}
+.msg.me{background:var(--navy);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.msg small{display:block;font-size:11px;opacity:.65;margin-top:2px}
+.composer{position:sticky;bottom:calc(76px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;background:var(--bg);padding-block:8px}
+.composer .btn{width:auto;padding:0 16px}
+
+/* документ */
+.sheet{position:fixed;inset:0;z-index:40;background:rgba(0,20,35,.45);display:flex;align-items:flex-end;justify-content:center}
+.sheet .in{background:var(--bg);width:min(100%,440px);max-height:calc(100% - env(safe-area-inset-top,0px) - 16px);overflow:auto;border-radius:20px 20px 0 0;padding:14px max(16px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));display:grid;gap:12px}
+.grab{width:40px;height:5px;border-radius:3px;background:var(--line);margin:0 auto 4px}
+.paper{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 16px;font-size:12.5px;line-height:1.5;color:#1b2733}
+.paper h3{font-size:14px;margin:0 0 10px;text-align:center}
+.paper table{width:100%;border-collapse:collapse;margin:10px 0}
+.paper td,.paper th{border:1px solid #c9d2da;padding:5px 6px;text-align:left;vertical-align:top}
+.paper th{background:#f1f4f6;font-weight:600}
+.stamp{width:70px;opacity:.85;float:right;margin-top:-8px}
+
+.toast{position:fixed;left:50%;bottom:calc(90px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:#fff;padding:11px 16px;border-radius:12px;font-size:14px;z-index:50;width:max-content;max-width:calc(100% - 32px);text-align:center}
+
+.toggle{appearance:none;width:46px;height:28px;border-radius:999px;background:var(--line);position:relative;flex:none;cursor:pointer;transition:background .2s}
+.toggle::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.2);transition:left .2s}
+.toggle:checked{background:var(--good)}
+.toggle:checked::after{left:21px}
+
+/* вход */
+.login{min-height:100vh;min-height:100dvh;background:var(--navy);color:#fff;display:flex;flex-direction:column;justify-content:center;gap:22px;padding-block:calc(32px + env(safe-area-inset-top,0px)) calc(32px + env(safe-area-inset-bottom,0px))}
+.login .mark{width:112px;height:112px;margin:0 auto;background:#fff;border-radius:50%;padding:4px}
+.login h2{margin:0;text-align:center;font-size:24px}
+.login p{margin:0;text-align:center;color:#B9C8D6}
+.login .card{background:#fff;color:var(--ink);border-radius:18px;padding:18px;display:grid;gap:12px}
+.login .link{background:none;border:0;color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.codebox{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.codebox input{text-align:center;font-size:22px;font-weight:700;padding:12px 0}
+.hint{font-size:12.5px;color:var(--muted);text-align:center}
+
+.empty{text-align:center;color:var(--muted);padding:24px 0}
+.alert{border-color:var(--warn);background:var(--warn-soft)}
+.shell[data-area="re"]{--bronze:#2E7D64;--bronze-soft:#E2F1EB}
+.dirsw{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:rgba(255,255,255,.1);border-radius:12px;padding:4px;margin-top:2px}
+.dirsw button{border:0;background:none;color:#B9C8D6;font-weight:700;font-size:14px;padding:8px 0;border-radius:9px}
+.dirsw button[aria-pressed="true"]{background:#fff;color:var(--navy)}
+.top .wrap.sw{padding-block:0 10px;display:block}
+.obj{display:grid;grid-template-columns:96px 1fr;gap:12px;text-align:left;width:100%;border:1px solid var(--line);background:var(--panel);border-radius:var(--r);padding:10px;position:relative}
+.ph{border-radius:10px;aspect-ratio:1;max-width:100%;background:var(--soft);display:grid;place-items:center;color:var(--navy);overflow:hidden}
+.ph svg{width:100%;height:100%;display:block}
+.obj b{display:block;font-size:15px}
+.obj .price{font-size:17px;font-weight:800;margin-top:4px}
+.fav{position:absolute;top:8px;right:8px;width:34px;height:34px;border-radius:50%;border:0;background:var(--panel);display:grid;place-items:center;color:var(--muted)}
+.fav[aria-pressed="true"]{color:#C2413A}
+.fav svg{width:20px;height:20px}
+.gal{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:var(--r)}
+.gal::-webkit-scrollbar{display:none}
+.gal>div{flex:0 0 100%;scroll-snap-align:start;aspect-ratio:16/10;border-radius:var(--r);overflow:hidden;background:var(--soft);position:relative}
+.gal>div svg{width:100%;height:100%;display:block}
+.gal .cap{position:absolute;left:10px;bottom:10px;background:rgba(0,20,35,.7);color:#fff;font-size:12px;font-weight:600;padding:4px 8px;border-radius:8px}
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tools .q{min-height:84px;justify-content:center}
+.infra{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.infra div{background:var(--soft);border-radius:10px;padding:9px 10px;font-size:13px}
+.infra b{display:block;font-size:14px}
+.tblwrap{overflow-x:auto}
+.cmp{border-collapse:collapse;width:100%;min-width:360px;font-size:13px}
+.cmp th,.cmp td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.cmp th{color:var(--muted);font-weight:600;width:96px}
+.cmp td.best{color:var(--good);font-weight:700}
+.slot{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.slot .chip{text-align:center;padding:9px 0}
+.slot .chip[disabled]{opacity:.35;text-decoration:line-through}
+.article{display:grid;gap:10px;font-size:15px;line-height:1.55}
+.article h3{margin:6px 0 0;font-size:17px}
+.article p{margin:0}
+input[type=range]{width:100%;accent-color:var(--bronze)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ring{transform-origin:50% 50%;animation:spin 40s linear infinite}
+
+/* ── два мира: у импорта и недвижимости своя шапка, свой акцент и свой узор ── */
+.shell{--hdr:#002C4A}
+.shell[data-area="re"]{--hdr:#0E3B34}
+.top{background:var(--hdr);transition:background .45s ease}
+body::before{background:#002C4A}
+.top::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;background-repeat:no-repeat;background-position:right 10px bottom 0;background-size:150px 46px}
+.shell[data-area="imp"] .top::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 46'%3E%3Cpath d='M4 40 Q75 -14 146 30' fill='none' stroke='%23E3B57A' stroke-width='1.5' stroke-dasharray='4 5'/%3E%3Ccircle cx='4' cy='40' r='3' fill='%23E3B57A'/%3E%3Ccircle cx='146' cy='30' r='3' fill='%23fff'/%3E%3C/svg%3E")}
+.shell[data-area="re"] .top::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 46'%3E%3Cg fill='%232E7D64'%3E%3Crect x='20' y='20' width='18' height='26'/%3E%3Crect x='42' y='6' width='22' height='40'/%3E%3Crect x='68' y='24' width='16' height='22'/%3E%3Crect x='88' y='12' width='24' height='34'/%3E%3Crect x='116' y='28' width='14' height='18'/%3E%3C/g%3E%3C/svg%3E")}
+.top .wrap{position:relative;z-index:1}
+.world{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);color:#fff;font-weight:700;font-size:14px;
+  padding:7px 8px 7px 12px;border-radius:999px;max-width:100%}
+.world .wdot{width:8px;height:8px;border-radius:50%;background:#E3B57A;box-shadow:0 0 0 3px rgba(227,181,122,.25)}
+.shell[data-area="re"] .world .wdot{background:#7FD1A8;box-shadow:0 0 0 3px rgba(127,209,168,.25)}
+.world .wsw{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;color:#B9C8D6;background:rgba(255,255,255,.1);border-radius:999px;padding:3px 9px}
+.world .wsw svg{width:14px;height:14px}
+.shell[data-area="re"] .tab[aria-current="page"]{color:#0E3B34}
+
+/* экран выбора направления */
+.doors{min-height:100vh;min-height:100dvh;background:#002C4A;color:#fff;display:flex;flex-direction:column;justify-content:center;gap:12px;padding-block:calc(16px + env(safe-area-inset-top,0px)) calc(28px + env(safe-area-inset-bottom,0px))}
+.shell:has(.doors){padding-bottom:0}
+.dh{text-align:center;display:grid;gap:8px;justify-items:center}
+.dh .mark{width:52px;height:52px;background:#fff;border-radius:50%;padding:3px}
+.dh h2{margin:2px 0 0;font-size:23px}
+.dh p{margin:0;color:#B9C8D6;font-size:14px;max-width:320px}
+.dgrid{display:grid;gap:12px}
+.door{border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:0 0 16px;text-align:left;color:#fff;display:grid;gap:4px;overflow:hidden;position:relative;
+  transition:transform .2s ease,box-shadow .2s ease}
+.door:active{transform:scale(.98)}
+.door.imp{background:linear-gradient(160deg,#0D3D61,#002C4A 70%)}
+.door.re{background:linear-gradient(160deg,#1F5C4E,#0E3B34 70%)}
+.door.cur{box-shadow:0 0 0 2px #E3B57A}
+.door svg{width:100%;height:clamp(84px,15dvh,150px);display:block;margin-bottom:2px;font-family:inherit}
+.door b{font-size:19px;padding:0 16px}
+.door span{font-size:13.5px;color:#C9D6E0;padding:0 16px;line-height:1.4}
+.door i{font-style:normal;font-weight:700;font-size:13px;color:#E3B57A;padding:6px 16px 0}
+.door.re i{color:#9FE0BE}
+.door .ctr{animation:ctr 5s ease-in-out infinite}
+@keyframes ctr{0%{transform:translate(30px,92px)}50%{transform:translate(160px,42px)}100%{transform:translate(290px,70px)}}
+.door .win{animation:win 3.2s ease-in-out infinite}.door .w1{animation-delay:1s}.door .w2{animation-delay:2s}
+@keyframes win{0%,100%{opacity:1}50%{opacity:.35}}
+.doors .dback{color:#B9C8D6;background:none;border:0;width:100%;font-weight:600;padding:8px}
+
+.shell[data-area="re"] .hello{background:linear-gradient(160deg,#1F5C4E,#0E3B34 75%)!important}
+
+/* ── плавные переходы ── */
+@keyframes inR{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:none}}
+@keyframes inL{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:none}}
+@keyframes inUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes inWorld{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+@keyframes hdrIn{from{clip-path:inset(0 0 0 100%)}to{clip-path:inset(0 0 0 0)}}
+@keyframes inDoor{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.shell[data-anim="fwd"] main{animation:inR .32s cubic-bezier(.2,.8,.2,1) both}
+.shell[data-anim="back"] main{animation:inL .32s cubic-bezier(.2,.8,.2,1) both}
+.shell[data-anim="tab"] main>*{animation:inUp .34s cubic-bezier(.2,.8,.2,1) both}
+.shell[data-anim="tab"] main>*:nth-child(2){animation-delay:.04s}.shell[data-anim="tab"] main>*:nth-child(3){animation-delay:.08s}
+.shell[data-anim="tab"] main>*:nth-child(n+4){animation-delay:.12s}
+.shell[data-anim="world"] .top{animation:hdrIn .5s cubic-bezier(.7,0,.2,1) both}
+.shell[data-anim="world"] main>*{animation:inWorld .45s .12s cubic-bezier(.2,.8,.2,1) both}
+.shell[data-anim="world"] main>*:nth-child(2){animation-delay:.18s}.shell[data-anim="world"] main>*:nth-child(n+3){animation-delay:.24s}
+.shell[data-anim="doors"] .door,.shell[data-anim="world"] .door,.shell[data-anim=""] .door{animation:inDoor .45s cubic-bezier(.2,.8,.2,1) both}
+.door.re{animation-delay:.08s!important}
+.shell[data-anim="doors"] .dh{animation:inUp .4s ease both}
+.sheet>*{animation:inDoor .3s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){.shell *{animation:none!important;transition:none!important}}
+.door .soon{font-style:normal;font-size:12px;color:#8FA6BA;padding:2px 16px 0;letter-spacing:.02em}
+.pf-hero{background:var(--navy);color:#fff;border:0;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center}
+.pf-ava{width:60px;height:60px;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;font-weight:800;font-size:20px;box-shadow:0 0 0 3px var(--bronze)}
+.pf-who{display:grid;gap:3px;min-width:0}.pf-who b{font-size:18px}.pf-who span{font-size:13px;color:#B9C8D6}
+.pf-stats{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;border-top:1px solid rgba(255,255,255,.15);padding-top:12px}
+.pf-stats div{display:grid;gap:2px}.pf-stats b{font-size:15px}.pf-stats span{font-size:12px;color:#B9C8D6}
+.pf-d>summary{list-style:none;cursor:pointer}.pf-d>summary::-webkit-details-marker{display:none}
+.pf-d>summary svg{transition:transform .2s}.pf-d[open]>summary svg{transform:rotate(90deg)}
+.pf-in{display:grid;gap:10px;padding:2px 0 14px}
+.pf-addr{display:grid;gap:2px;font-size:14px}.pf-addr span{color:var(--muted);font-size:13px}
+.btn.sm{padding:7px 12px;font-size:13px;min-height:0;justify-self:start;flex:none;width:auto}
+.ic.g{background:#E3F1EB;color:#1F6B55}
+a.li{color:inherit;text-decoration:none}
+</style>
+
+</head>
+<body>
+<div class="shell" id="app"></div>
+
+<script>
+(function(){
+/* ───────── иконки (линейные, свои) ───────── */
+const I={
+ home:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>',
+ box:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 7.5L12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5L12 12l9-4.5M12 12v9"/></svg>',
+ doc:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg>',
+ calc:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h1M12 11h1M16 11h0M8 15h1M12 15h1M16 15v3M8 18h5"/></svg>',
+ user:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>',
+ bell:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0112 0v5l2 2H4z"/><path d="M10 20a2 2 0 004 0"/></svg>',
+ back:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
+ chev:'<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>',
+ check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>',
+ plus:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>',
+ search:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>',
+ house:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 21V9l8-5 8 5v12z"/><path d="M9 21v-7h6v7M4 21h16"/></svg>',
+ chat:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg>',
+ swap:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v14M7 18l-3-3M7 18l3-3M17 20V6M17 6l-3 3M17 6l3 3"/></svg>',
+ key:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M16 7l3 3M14 9l2 2"/></svg>',
+ sell:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 12l9-9h8v8l-9 9z"/><circle cx="16" cy="8" r="1.5"/></svg>',
+ rent:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M8 14h3M8 17h6"/></svg>',
+ bank:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 9l9-5 9 5zM5 9v9M10 9v9M14 9v9M19 9v9M3 21h18"/></svg>',
+ copy:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4H4v12h4"/></svg>',
+ line:'<svg viewBox="0 0 40 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"><path d="M0 6h34"/><path d="M33 2l5 4-5 4" stroke-dasharray="0"/></svg>'
+};
+const LOGO=(cls)=>`<svg class="${cls||''}" viewBox="0 0 100 100" aria-hidden="true"><defs><path id="lt" d="M15.5 50 A34.5 34.5 0 0 1 84.5 50"/><path id="lb" d="M8.6 50 A41.4 41.4 0 0 0 91.4 50"/></defs><g class="ring"><circle cx="50" cy="50" r="46" fill="none" stroke="#002C4A" stroke-width="3.5"/><text font-family="Golos Text,Arial,sans-serif" font-weight="800" font-size="9.6" letter-spacing="3" fill="#002C4A"><textPath href="#lt" startOffset="50%" text-anchor="middle">ТРИМОСТ</textPath></text><text font-family="Golos Text,Arial,sans-serif" font-weight="700" font-size="6.6" letter-spacing="1.1" fill="#002C4A"><textPath href="#lb" startOffset="50%" text-anchor="middle">ИМПОРТ · НЕДВИЖИМОСТЬ</textPath></text><circle cx="13" cy="50" r="1.8" fill="#AA6A22"/><circle cx="87" cy="50" r="1.8" fill="#AA6A22"/></g><circle cx="50" cy="50" r="28" fill="none" stroke="#002C4A" stroke-width="1.8"/><path d="M36 50.5 Q50 31 64 50.5" fill="none" stroke="#AA6A22" stroke-width="4.2" stroke-linecap="round"/><path d="M36 50.5 V54 M64 50.5 V54" stroke="#AA6A22" stroke-width="4.2" stroke-linecap="round"/><text x="50" y="68" text-anchor="middle" font-family="Golos Text,Arial,sans-serif" font-weight="800" font-size="18" fill="#002C4A">ТМ</text></svg>`;
+const MARK=`<svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="none" stroke="#002C4A" stroke-width="6"/><path d="M30 52 Q50 24 70 52" fill="none" stroke="#AA6A22" stroke-width="7" stroke-linecap="round"/><path d="M30 52V58M70 52V58" stroke="#AA6A22" stroke-width="7" stroke-linecap="round"/><text x="50" y="80" text-anchor="middle" font-family="Golos Text,Arial,sans-serif" font-weight="800" font-size="22" fill="#002C4A">ТМ</text></svg>`;
+
+/* ───────── демо-данные (всё — пример) ───────── */
+const APP_DIR='re';   /* 'imp' — только импорт · 're' — только недвижимость · 'both' — оба направления */
+const STAGES=[
+ ['Заявка принята','сайт или приложение'],['Договор и счёт','менеджер · 1С'],['Оплата получена','1С, банк'],
+ ['Отгружен из Китая','перевозчик'],['Выпущен таможней','таможенный брокер'],['На складе перевозчика','склад в России'],
+ ['Отправлен вам','перевозчик по России'],['Получен','вы подтверждаете'],['Закрыт документами','акт и отчёт агента в 1С']];
+const fmt=n=>Math.round(n).toLocaleString('ru-RU');
+const rub=n=>fmt(n)+' ₽';
+let S={
+ logged:true, dirs:['imp'], dir:'imp', tab:'home', stack:[], filter:'active', docFilter:'Все', unread:2,
+ notify:{tg:true,max:false,push:true,mail:true},
+ orders:[
+  {id:'TRM-0142',title:'Светодиодные панели, 1 200 шт',from:'Гуанчжоу',to:'Екатеринбург',mode:'Авто',kg:1840,m3:9.6,sum:684000,paid:684000,stage:5,
+   carrier:'Перевозчик Китай–Россия (пример)',track:'GZ-EKB-77812',carrier2:'',track2:'',
+   dates:['02.10','03.10','06.10','11.10','27.10','план 31.10','план 03.11','план 06.11','—'],plan:'06.11',issue:false,manager:'Анна, менеджер по импорту',
+   pays:[{d:'06.10',s:684000,m:'Аванс 100% по счёту № 318'}],
+   est:[['Товар и оплата поставщику',.73],['Доставка Китай → РФ и по России',.16],['Таможня и документы',.08],['Наши услуги',.03]]},
+  {id:'TRM-0137',title:'Запчасти для спецтехники',from:'Иу',to:'Новосибирск',mode:'Ж/д',kg:4200,m3:14.2,sum:1126000,paid:788200,stage:7,
+   carrier:'Ж/д экспедитор (пример)',track:'YW-NSK-30418',carrier2:'Перевозчик по России (пример)',track2:'1120-4471-9902',
+   dates:['28.08','29.08','01.09','08.09','30.09','07.10','12.10','план 21.10','—'],plan:'21.10',issue:false,manager:'Анна, менеджер по импорту',
+   pays:[{d:'01.09',s:500000,m:'Аванс по счёту № 291'},{d:'12.10',s:288200,m:'Доплата перед отгрузкой'}],
+   est:[['Товар и оплата поставщику',.71],['Доставка Китай → РФ и по России',.19],['Таможня и документы',.07],['Наши услуги',.03]]},
+  {id:'TRM-0129',title:'Упаковочное оборудование, 2 линии',from:'Шэньчжэнь',to:'Казань',mode:'Море',kg:7600,m3:31,sum:2340000,paid:2340000,stage:9,
+   carrier:'Морская линия (пример)',track:'SZX-KZN-11930',carrier2:'Перевозчик по России (пример)',track2:'0987-2210-5531',
+   dates:['14.06','15.06','19.06','24.06','09.08','14.08','16.08','21.08','29.08'],plan:'21.08',issue:true,manager:'Анна, менеджер по импорту',
+   pays:[{d:'19.06',s:2340000,m:'Оплата по счёту № 290'}],
+   est:[['Товар и оплата поставщику',.79],['Доставка море + ж/д',.14],['Таможня и документы',.04],['Наши услуги',.03]]}
+ ],
+ docs:[
+  {t:'Счёт',no:'№ 318',d:'03.10.2026',o:'TRM-0142',sum:684000,src:'1С',sign:'не требуется'},
+  {t:'ДТ',no:'10502010/271026/31744',d:'27.10.2026',o:'TRM-0142',sum:null,src:'брокер',sign:'—'},
+  {t:'Инвойс',no:'GZ-2026-0917',d:'01.10.2026',o:'TRM-0142',sum:null,src:'поставщик',sign:'—'},
+  {t:'CMR',no:'№ 0441871',d:'11.10.2026',o:'TRM-0142',sum:null,src:'перевозчик',sign:'—'},
+  {t:'Договор',no:'АГ-17/2026',d:'29.08.2026',o:'все заказы',sum:null,src:'Битрикс24',sign:'подписан в ЭДО'},
+  {t:'Счёт',no:'№ 291',d:'29.08.2026',o:'TRM-0137',sum:1126000,src:'1С',sign:'не требуется'},
+  {t:'УПД',no:'№ 204',d:'29.08.2026',o:'TRM-0129',sum:187200,src:'1С',sign:'подписан в ЭДО'},
+  {t:'Отчёт агента',no:'№ 12',d:'29.08.2026',o:'TRM-0129',sum:2340000,src:'1С',sign:'ждёт вашей подписи'},
+  {t:'Сертификат',no:'ЕАЭС RU С-CN.АБ12.В.04411',d:'05.08.2026',o:'TRM-0129',sum:null,src:'орган сертификации',sign:'—'},
+  {t:'Акт сверки',no:'за 3 кв. 2026',d:'01.10.2026',o:'все заказы',sum:337800,src:'1С',sign:'по запросу'},
+  {t:'Бронь',no:'№ СГ-2-9-64',d:'24.09.2026',o:'RE-0021',sum:null,src:'застройщик',sign:'подписан',dir:'re'},
+  {t:'Одобрение банка',no:'предварительное',d:'—',o:'RE-0021',sum:null,src:'банк',sign:'ждём ответа банка',dir:'re'},
+  {t:'ДДУ',no:'проект',d:'—',o:'RE-0021',sum:12480000,src:'застройщик',sign:'на проверке у юриста',dir:'re'},
+  {t:'Выписка ЕГРН',no:'на застройщика',d:'20.09.2026',o:'RE-0021',sum:null,src:'Росреестр',sign:'—',dir:'re'}
+ ],
+ chat:{'TRM-0142':[{me:0,t:'Добрый день! Груз выпустили 27.10, ДТ уже в документах заказа.',h:'27.10, 14:05'},{me:1,t:'Спасибо. Когда будет на складе в Екатеринбурге?',h:'27.10, 14:20'},{me:0,t:'По плану 31.10. Как придёт, пришлю фото паллет.',h:'27.10, 14:22'}]},
+ favs:['o2'], roomF:'Все',
+ objects:[
+  {id:'o1',z:'z1',zk:'ЖК «Северная гавань»',rooms:'2',m2:64.2,floor:'9 из 17',price:12480000,ready:'IV кв. 2027',dist:'Москва, САО',img:0},
+  {id:'o2',z:'z2',zk:'ЖК «Сосновый квартал»',rooms:'1',m2:41.5,floor:'5 из 12',price:8190000,ready:'сдан',dist:'Казань, Советский р-н',img:1},
+  {id:'o3',z:'z3',zk:'ЖК «Речной»',rooms:'3+',m2:88.0,floor:'14 из 24',price:17350000,ready:'II кв. 2028',dist:'Екатеринбург, Академический',img:2},
+  {id:'o4',z:'z4',zk:'ЖК «Парк Линии»',rooms:'Студия',m2:27.3,floor:'3 из 9',price:5640000,ready:'III кв. 2027',dist:'Новосибирск, Октябрьский',img:0},
+  {id:'o5',z:'z1',zk:'ЖК «Северная гавань»',rooms:'1',m2:38.9,floor:'12 из 17',price:8020000,ready:'IV кв. 2027',dist:'Москва, САО',img:1}
+ ],
+ shows:[], cmpSel:[],
+ zk:[
+  {id:'z1',name:'ЖК «Северная гавань»',city:'Москва, САО',cls:'Комфорт',ready:'IV кв. 2027',done:62,from:7650000,left:148,dev:'Застройщик А (пример)',about:'Три корпуса 17–24 этажа у набережной, закрытый двор без машин, подземный паркинг, школа и сад в составе проекта.',img:0},
+  {id:'z2',name:'ЖК «Сосновый квартал»',city:'Казань, Советский р-н',cls:'Комфорт',ready:'сдан',done:100,from:5980000,left:23,dev:'Застройщик Б (пример)',about:'Сданный квартал малоэтажных домов у соснового леса, своя управляющая компания, ключи сразу после сделки.',img:1},
+  {id:'z3',name:'ЖК «Речной»',city:'Екатеринбург, Академический',cls:'Бизнес',ready:'II кв. 2028',done:34,from:9900000,left:211,dev:'Застройщик В (пример)',about:'Башни бизнес-класса с видовыми квартирами, лобби с ресепшен, фитнес и коворкинг для жителей.',img:2},
+  {id:'z4',name:'ЖК «Парк Линии»',city:'Новосибирск, Октябрьский',cls:'Стандарт',ready:'III кв. 2027',done:71,from:4350000,left:96,dev:'Застройщик Г (пример)',about:'Девятиэтажные дома рядом с парком, много студий и однушек под сдачу, хорошая доходность для инвестора.',img:0}
+ ],
+ rent:[
+  {t:'Квартиры',name:'2-комн., 58 м², ЖК «Северная гавань»',city:'Москва',price:85000,note:'без комиссии, можно с детьми'},
+  {t:'Квартиры',name:'Студия 26 м², у метро',city:'Казань',price:28000,note:'мебель и техника'},
+  {t:'Склады',name:'Склад 420 м², класс B',city:'Екатеринбург',price:252000,note:'пандус, отапливаемый, 6 м потолки'},
+  {t:'Склады',name:'Склад 1 200 м², класс A',city:'Подмосковье, М-4',price:780000,note:'кросс-док, 12 ворот'},
+  {t:'Офисы',name:'Офис 64 м², бизнес-центр',city:'Новосибирск',price:96000,note:'5 кабинетов, парковка'}
+ ], rentF:'Квартиры',
+ deal:{id:'RE-0021',obj:'o1',stage:4,price:12480000,down:3744000,rate:6,years:20,
+  dates:['12.09','15.09','20.09','24.09','план 25.10','план 05.11','план 25.11','IV кв. 2027']},
+ notes:[
+  {t:'TRM-0142 выпущен таможней',d:'План у вас 06.11. ДТ добавлена в документы.',h:'27.10',o:'TRM-0142',new:true},
+  {t:'Отчёт агента ждёт подписи',d:'TRM-0129, отчёт № 12. Подпишите в ЭДО.',h:'29.08',o:'TRM-0129',new:true},
+  {t:'TRM-0137 отправлен вам',d:'Трек по России 1120-4471-9902. План 21.10.',h:'12.10',o:'TRM-0137',new:false},
+  {t:'Бронь в ЖК «Северная гавань» подтверждена',d:'Сделка RE-0021. Следующий шаг: одобрение ипотеки.',h:'24.09',re:true,new:true}
+ ]
+};
+try{const sv=JSON.parse(localStorage.getItem('trimost-app')||'null'); if(sv){S.logged=sv.logged!==false; if(sv.extra) S.orders=sv.extra.concat(S.orders); if(sv.notify) S.notify=sv.notify; if(sv.dir) S.dir=sv.dir; if(Array.isArray(sv.dirs)&&sv.dirs.length) S.dirs=sv.dirs; if(sv.picked) S.picked=true; if(sv.favs) S.favs=sv.favs; if(sv.shows) S.shows=sv.shows;}}catch(e){}
+function save(){try{localStorage.setItem('trimost-app',JSON.stringify({dirs:S.dirs,logged:S.logged,dir:S.dir,picked:S.picked,favs:S.favs,shows:S.shows,notify:S.notify,extra:S.orders.filter(o=>o.mine)}))}catch(e){}}
+
+const app=document.getElementById('app');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function toast(t){const el=document.createElement('div');el.className='toast';el.textContent=t;document.body.appendChild(el);setTimeout(()=>el.remove(),2600)}
+function cur(o){return o.stage>=9?'Заказ закрыт':o.stage<1?'Заявка на расчёте':STAGES[o.stage-1][0]}
+
+/* ───────── навигация ───────── */
+function go(screen,arg){S.stack.push({screen,arg});S.anim='fwd';render();window.scrollTo(0,0)}
+function back(){S.stack.pop();S.anim='back';render();window.scrollTo(0,0)}
+function setTab(t){if(!tabsNow().some(x=>x[0]===t))S.dir=S.dir==='re'?'imp':'re';S.anim=S.tab===t?'':'tab';S.tab=t;S.stack=[];render();window.scrollTo(0,0)}
+
+const TABS_IMP=[['home','Главная',I.home],['orders','Заказы',I.box],['calc','Расчёт',I.calc],['docs','Документы',I.doc],['profile','Профиль',I.user]];
+const TABS_RE=[['home','Главная',I.home],['objects','Подбор',I.house],['deal','Сделка',I.doc],['mort','Ипотека',I.bank],['profile','Профиль',I.user]];
+const tabsNow=()=>S.dir==='re'?TABS_RE:TABS_IMP;
+function setDir(d){const ch=S.dir!==d||!S.picked;S.dir=d;S.picked=true;S.tab='home';S.stack=[];S.anim=ch?'world':'tab';save();render();window.scrollTo(0,0)}
+const WORLD={imp:['Импорт из Китая','Грузы, расчёт, документы'],re:['Недвижимость','Подбор, сделка, ипотека']};
+function shell(title,body,opts={}){
+ const left=S.stack.length?`<button class="iconbtn" data-act="back" aria-label="Назад">${I.back}</button>`:MARK;
+ return `<header class="top"><div class="wrap">${left}<h1>${title}</h1>
+  <button class="iconbtn" data-act="notes" aria-label="Уведомления">${I.bell}${S.notes.some(n=>n.new)?'<span class="dot"></span>':''}</button>
+  <button class="iconbtn ava" data-tab="profile" aria-label="Профиль" ${S.tab==='profile'&&!S.stack.length?'aria-current="page"':''}>СП</button></div>
+  ${S.stack.length||APP_DIR!=='both'?'':`<div class="wrap sw"><button class="world" data-act="worlds" aria-label="Сменить направление"><span class="wdot"></span>${WORLD[S.dir][0]}<span class="wsw">${I.swap}сменить</span></button></div>`}</header>
+  <main class="wrap">${body}</main>
+  <nav class="tabs">${tabsNow().map(([k,l,ic])=>`<button class="tab" data-tab="${k}" ${S.tab===k&&!opts.noTab?'aria-current="page"':''}>${ic}<span>${l}</span></button>`).join('')}</nav>`;
+}
+
+/* ───────── выбор направления: два «мира» в одном приложении ───────── */
+function doors(){
+ const cur=S.picked?S.dir:'';
+ return `<div class="doors">
+  <div class="wrap dh">${LOGO('mark')}<h2>Что вас интересует?</h2><p>Выберите направление. Сменить его можно в любой момент в шапке.</p></div>
+  <div class="wrap dgrid">
+   <button class="door imp${cur==='imp'?' cur':''}" data-dir="imp">
+    <svg viewBox="0 0 320 150" aria-hidden="true" class="anim"><text x="12" y="16" fill="rgba(255,255,255,.6)" font-size="10" font-weight="700" letter-spacing="2" font-family="inherit">КИТАЙ</text><text x="308" y="16" text-anchor="end" fill="rgba(255,255,255,.6)" font-size="10" font-weight="700" letter-spacing="2" font-family="inherit">РОССИЯ</text><path d="M30 44 C110 4 210 4 290 44" fill="none" stroke="#E3B57A" stroke-width="1.6" stroke-dasharray="5 6" opacity=".55"/><path d="M30 82 C120 66 200 120 290 116" fill="none" stroke="#E3B57A" stroke-width="1.6" stroke-dasharray="5 6" opacity=".55"/><path d="M30 120 C120 140 200 70 290 80" fill="none" stroke="#E3B57A" stroke-width="1.6" stroke-dasharray="5 6" opacity=".55"/><circle cx="30" cy="44" r="4.5" fill="#E3B57A"/><circle cx="30" cy="44" r="4.5" fill="none" stroke="#E3B57A" opacity=".6"><animate attributeName="r" values="4.5;11" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0" dur="2.4s" repeatCount="indefinite"/></circle><circle cx="30" cy="82" r="4.5" fill="#E3B57A"/><circle cx="30" cy="82" r="4.5" fill="none" stroke="#E3B57A" opacity=".6"><animate attributeName="r" values="4.5;11" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0" dur="2.4s" repeatCount="indefinite"/></circle><circle cx="30" cy="120" r="4.5" fill="#E3B57A"/><circle cx="30" cy="120" r="4.5" fill="none" stroke="#E3B57A" opacity=".6"><animate attributeName="r" values="4.5;11" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0" dur="2.4s" repeatCount="indefinite"/></circle><circle cx="290" cy="44" r="4.5" fill="#fff"/><circle cx="290" cy="44" r="4.5" fill="none" stroke="#fff" opacity=".6"><animate attributeName="r" values="4.5;11" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0" dur="2.4s" repeatCount="indefinite"/></circle><circle cx="290" cy="116" r="4.5" fill="#fff"/><circle cx="290" cy="116" r="4.5" fill="none" stroke="#fff" opacity=".6"><animate attributeName="r" values="4.5;11" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0" dur="2.4s" repeatCount="indefinite"/></circle><circle cx="290" cy="80" r="4.5" fill="#fff"/><circle cx="290" cy="80" r="4.5" fill="none" stroke="#fff" opacity=".6"><animate attributeName="r" values="4.5;11" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0" dur="2.4s" repeatCount="indefinite"/></circle><text x="38" y="58" fill="rgba(255,255,255,.75)" font-size="9" font-family="inherit">Иу</text><text x="38" y="98" fill="rgba(255,255,255,.75)" font-size="9" font-family="inherit">Гуанчжоу</text><text x="38" y="138" fill="rgba(255,255,255,.75)" font-size="9" font-family="inherit">Шэньчжэнь</text><text x="282" y="62" text-anchor="end" fill="rgba(255,255,255,.75)" font-size="9" font-family="inherit">Москва</text><text x="282" y="99" text-anchor="end" fill="rgba(255,255,255,.75)" font-size="9" font-family="inherit">Казань</text><text x="282" y="138" text-anchor="end" fill="rgba(255,255,255,.75)" font-size="9" font-family="inherit">Новосибирск</text><g><rect x="-13" y="-7" width="20" height="13" rx="1.5" fill="#AA6A22" stroke="#E3B57A" stroke-width=".8"/><path d="M-8 -7V6M-3 -7V6M2 -7V6" stroke="#E3B57A" stroke-width=".7"/><rect x="8" y="-4" width="7" height="10" rx="1.5" fill="#E3B57A"/><animateMotion dur="6s" begin="0s" repeatCount="indefinite" rotate="auto" path="M30 44 C110 4 210 4 290 44" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines=".45 0 .55 1"/></g><g><rect x="-20" y="-5" width="12" height="10" rx="1.5" fill="#E3B57A"/><rect x="-6" y="-5" width="12" height="10" rx="1.5" fill="#AA6A22" stroke="#E3B57A" stroke-width=".8"/><rect x="8" y="-5" width="12" height="10" rx="2.5" fill="#fff"/><animateMotion dur="7.5s" begin="-2s" repeatCount="indefinite" rotate="auto" path="M30 82 C120 66 200 120 290 116" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines=".45 0 .55 1"/></g><g><path d="M-15 0H15L11 7H-11Z" fill="#fff"/><rect x="-10" y="-8" width="9" height="8" fill="#AA6A22" stroke="#E3B57A" stroke-width=".7"/><rect x="0" y="-8" width="9" height="8" fill="#E3B57A"/><animateMotion dur="9s" begin="-4s" repeatCount="indefinite" rotate="auto" path="M30 120 C120 140 200 70 290 80" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines=".45 0 .55 1"/></g></svg>
+    <b>Импорт из Китая</b><span>Расчёт доставки, заказы, треки и документы</span><em class="soon">Скоро: Гонконг · Япония · ОАЭ · Европа · США</em><i>${cur==='imp'?'Вы сейчас здесь':'Перейти'} →</i></button>
+   <button class="door re${cur==='re'?' cur':''}" data-dir="re">
+    <svg viewBox="0 0 320 138" aria-hidden="true" class="anim"><circle cx="34" cy="26" r="10" fill="#E3B57A" opacity=".9"/><path d="M0 132H320" stroke="rgba(255,255,255,.35)"/><path d="M18 132V102L44 82L70 102V132Z" fill="#2E7D64"/><path d="M12 104L44 78L76 104" fill="none" stroke="#9FE0BE" stroke-width="3" stroke-linejoin="round"/><rect x="38" y="112" width="12" height="20" fill="#0E3B34"/><rect x="24" y="108" width="8" height="7" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></rect><rect x="56" y="108" width="8" height="7" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="1.2s" repeatCount="indefinite"/></rect><g><path d="M44 48c-7 0-12 5-12 11 0 8 12 19 12 19s12-11 12-19c0-6-5-11-12-11z" fill="#E3B57A"/><circle cx="44" cy="59" r="4.5" fill="#0E3B34"/><animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".4 0 .6 1;.4 0 .6 1"/></g><rect x="92" y="40" width="46" height="92" fill="#2E7D64"/><rect x="144" y="64" width="34" height="68" fill="#1F5C4E"/><rect x="100" y="48" width="8" height="6" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></rect><rect x="122" y="48" width="8" height="6" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="1s" repeatCount="indefinite"/></rect><rect x="100" y="61" width="8" height="6" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="1s" repeatCount="indefinite"/></rect><rect x="122" y="61" width="8" height="6" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="2s" repeatCount="indefinite"/></rect><rect x="100" y="74" width="8" height="6" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="2s" repeatCount="indefinite"/></rect><rect x="122" y="74" width="8" height="6" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></rect><rect x="100" y="87" width="8" height="6" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></rect><rect x="122" y="87" width="8" height="6" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="1s" repeatCount="indefinite"/></rect><rect x="100" y="100" width="8" height="6" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="1s" repeatCount="indefinite"/></rect><rect x="122" y="100" width="8" height="6" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="2s" repeatCount="indefinite"/></rect><rect x="100" y="113" width="8" height="6" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="2s" repeatCount="indefinite"/></rect><rect x="122" y="113" width="8" height="6" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></rect><rect x="152" y="72" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="2s" repeatCount="indefinite"/></rect><rect x="166" y="72" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></rect><rect x="152" y="84" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></rect><rect x="166" y="84" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="1s" repeatCount="indefinite"/></rect><rect x="152" y="96" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="1s" repeatCount="indefinite"/></rect><rect x="166" y="96" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="2s" repeatCount="indefinite"/></rect><rect x="152" y="108" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="2s" repeatCount="indefinite"/></rect><rect x="166" y="108" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></rect><rect x="200" y="96" width="50" height="36" fill="#1F5C4E"/><rect x="200" y="96" width="50" height="36" fill="none" stroke="#9FE0BE" stroke-dasharray="3 3" opacity=".6"/><rect x="208" y="104" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></rect><rect x="221" y="104" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="1s" repeatCount="indefinite"/></rect><rect x="234" y="104" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="2s" repeatCount="indefinite"/></rect><rect x="208" y="116" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="1s" repeatCount="indefinite"/></rect><rect x="221" y="116" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="2s" repeatCount="indefinite"/></rect><rect x="234" y="116" width="7" height="5" fill="#F2D3A8"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></rect><path d="M286 132V22M280 132l12-10M280 116l12-10M280 100l12-10M280 84l12-10M280 68l12-10M280 52l12-10M280 36l12-10" stroke="#E3B57A" stroke-width="2"/><path d="M206 22H304M296 22L286 12L276 22" stroke="#E3B57A" stroke-width="2.5" fill="none"/><g><line x1="225" y1="22" x2="225" y2="40" stroke="#E3B57A" stroke-width="1.2"><animate attributeName="y2" values="40;78;78;40" keyTimes="0;.5;.75;1" dur="5s" repeatCount="indefinite"/></line><rect x="204" y="40" width="42" height="14" fill="#9FE0BE" opacity=".9"><animate attributeName="y" values="40;78;78;40" keyTimes="0;.5;.75;1" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;.9;0;0" keyTimes="0;.5;.75;1" dur="5s" repeatCount="indefinite"/></rect><rect x="200" y="82" width="50" height="14" fill="#2E7D64" opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.5;.52;1" dur="5s" repeatCount="indefinite"/></rect></g><g><rect x="0" y="-9" width="26" height="8" rx="3" fill="#F2D3A8"/><rect x="5" y="-14" width="14" height="6" rx="2" fill="#F2D3A8"/><circle cx="6" cy="-1" r="2.6" fill="#0E3B34"/><circle cx="20" cy="-1" r="2.6" fill="#0E3B34"/><animateTransform attributeName="transform" type="translate" values="-40 132;340 132" dur="8s" repeatCount="indefinite"/></g></svg>
+    <b>Недвижимость</b><span>Подбор квартир, показы, сделка и ипотека</span><i>${cur==='re'?'Вы сейчас здесь':'Перейти'} →</i></button>
+  </div>
+  ${S.picked?`<div class="wrap"><button class="link dback" data-act="worldsclose">Назад</button></div>`:''}
+ </div>`;
+}
+
+/* ───────── экраны ───────── */
+function orderCard(o){
+ const pct=Math.round(Math.min(o.stage,9)/9*100);
+ const [st,cls]=o.stage>=9?(o.issue?['Закрыт · была претензия','warn']:['Закрыт','ok']):[cur(o),'go'];
+ return `<button class="order" data-act="order" data-id="${o.id}">
+  <div class="row between"><span class="mono">${o.id}</span><span class="pill ${cls}">${st}</span></div>
+  <div class="route"><div class="city"><b>${o.from}</b><span>Китай</span></div><div class="mode">${I.line}${o.mode.toUpperCase()}</div><div class="city r"><b>${o.to}</b><span>Россия</span></div></div>
+  <div class="small" style="font-weight:600">${esc(o.title)}</div>
+  <div class="bar"><i style="width:${pct}%"></i></div>
+  <div class="row between small muted"><span>Этап ${Math.min(o.stage+ (o.stage<9?1:0),9)} из 9</span><span>${o.stage>=9?'получен '+o.dates[7]:'план у вас '+o.plan}</span></div>
+ </button>`;
+}
+function home(){
+ const act=S.orders.filter(o=>o.stage<9);
+ const debt=S.orders.reduce((a,o)=>a+(o.sum-o.paid),0);
+ return shell('Тримост',`
+  <section class="panel hello">${LOGO('arch')}
+   <div class="muted small">Добрый день, Сергей</div>
+   <b>ООО «Пример Трейд»</b> <span class="ex">пример</span>
+   <div class="row" style="gap:18px;margin-top:12px">
+    <div><div style="font-size:24px;font-weight:800" class="num">${act.length}</div><div class="muted small">в пути</div></div>
+    <div><div style="font-size:24px;font-weight:800" class="num">${rub(debt)}</div><div class="muted small">к оплате</div></div>
+   </div>
+  </section>
+  <div class="quick">
+   <button class="q" data-act="newreq">${I.plus}Новая заявка</button>
+   <button class="q" data-tab="calc">${I.calc}Расчёт доставки</button>
+   <button class="q" data-act="track">${I.search}Найти груз</button>
+   <button class="q" data-tab="docs">${I.doc}Доку&shy;менты</button>
+  </div>
+  ${S.notes.some(n=>n.new&&n.t.includes('подпис'))?`<button class="panel alert li" style="padding:12px 14px;border-radius:14px" data-act="doc" data-i="7"><div class="ic b">ЭДО</div><div class="tx"><b>Отчёт агента ждёт подписи</b><span>TRM-0129 · № 12 от 29.08.2026</span></div>${I.chev}</button>`:''}
+  <div class="h2">Заказы в пути</div>
+  ${act.map(orderCard).join('')||'<div class="panel empty">Сейчас грузов в пути нет</div>'}
+  <div class="h2">Ваш менеджер</div>
+  <div class="panel row"><div class="li" style="padding:0;border:0"><div class="ic">АН</div><div class="tx"><b>Анна</b><span>менеджер по импорту · отвечает с 9 до 19 МСК</span></div></div>
+   <button class="iconbtn" style="background:var(--soft);color:var(--navy)" data-act="chat" data-id="TRM-0142" aria-label="Написать">${I.chat}</button></div>
+  <p class="hint">Все данные на экранах — пример для показа. В рабочей версии они придут из Битрикс24 и 1С.</p>
+ `);
+}
+function orders(){
+ const list=S.orders.filter(o=>S.filter==='active'?o.stage<9:o.stage>=9);
+ return shell('Мои заказы',`
+  <div class="chips"><button class="chip" data-filter="active" aria-pressed="${S.filter==='active'}">В работе · ${S.orders.filter(o=>o.stage<9).length}</button><button class="chip" data-filter="done" aria-pressed="${S.filter==='done'}">Завершены · ${S.orders.filter(o=>o.stage>=9).length}</button></div>
+  ${list.map(orderCard).join('')||'<div class="panel empty">Здесь пока пусто</div>'}
+  <button class="btn bronze" data-act="newreq">${I.plus.replace('<svg','<svg width="20" height="20"')} Новая заявка</button>`);
+}
+function order(id){
+ const o=S.orders.find(x=>x.id===id); if(!o) return home();
+ const docs=S.docs.map((d,i)=>[d,i]).filter(([d])=>d.o===o.id);
+ const steps=STAGES.map(([t,src],i)=>{
+  const cls=i<o.stage?'done':(i===o.stage&&o.stage<9?'now':'');
+  return `<li class="st ${cls}"><span class="mk">${cls==='done'?I.check:''}</span><div><div class="t">${t}</div><div class="src">${src}</div></div><div class="d num">${o.dates[i]||''}</div></li>`}).join('');
+ const debt=o.sum-o.paid;
+ return shell(o.id,`
+  <section class="panel" style="display:grid;gap:12px">
+   <div class="route"><div class="city"><b>${o.from}</b><span>Китай</span></div><div class="mode">${I.line}${o.mode.toUpperCase()}</div><div class="city r"><b>${o.to}</b><span>Россия</span></div></div>
+   <div style="font-weight:700">${esc(o.title)} <span class="ex">пример</span></div>
+   <div class="row small muted num"><span>${fmt(o.kg)} кг</span>·<span>${String(o.m3).replace('.',',')} м³</span>·<span>${o.stage>=9?'получен '+o.dates[7]:'план у вас '+o.plan}</span></div>
+  </section>
+  ${o.stage===7?`<div class="panel" style="display:grid;gap:10px"><b>Груз уже у вас?</b><div class="btns"><button class="btn" data-act="got" data-id="${o.id}">Да, всё в порядке</button><button class="btn ghost" data-act="issue" data-id="${o.id}">Что-то не так</button></div></div>`:''}
+  <div class="h2">Где груз</div>
+  <section class="panel"><ol class="steps">${steps}</ol></section>
+  <div class="h2">Перевозка</div>
+  <section class="panel"><dl class="kv">
+   <dt>Китай → Россия</dt><dd>${esc(o.carrier)}</dd>
+   <dt>Трек</dt><dd><button class="chip mono" data-copy="${o.track}" style="padding:4px 10px">${o.track} ${I.copy.replace('<svg','<svg width="13" height="13" style="vertical-align:-2px"')}</button></dd>
+   ${o.track2?`<dt>По России</dt><dd>${esc(o.carrier2)}</dd><dt>Трек по России</dt><dd><button class="chip mono" data-copy="${o.track2}" style="padding:4px 10px">${o.track2}</button></dd>`:''}
+  </dl></section>
+  <div class="h2">Смета заказа <span class="ex">пример структуры</span></div>
+  <section class="panel" style="display:grid;gap:8px">
+   ${(o.est||[]).map(([n,sh])=>`<div><div class="row between small"><span>${n}</span><b class="num">${rub(o.sum*sh)}</b></div><div class="bar" style="margin-top:4px"><i style="width:${Math.round(sh*100)}%"></i></div></div>`).join('')}
+  </section>
+  <div class="h2">Деньги</div>
+  <section class="panel"><dl class="kv num">
+   <dt>Сумма заказа</dt><dd>${rub(o.sum)}</dd><dt>Оплачено</dt><dd style="color:var(--good)">${rub(o.paid)}</dd>
+   <dt>Осталось</dt><dd style="color:${debt>0?'var(--warn)':'var(--good)'}">${debt>0?rub(debt):'0 ₽'}</dd></dl>
+   ${(o.pays||[]).length?`<div class="h2" style="margin-top:12px">Платежи</div><div class="list">${o.pays.map(p=>`<div class="li" style="padding:8px 0"><div class="ic" style="width:34px;height:34px">₽</div><div class="tx"><b>${rub(p.s)}</b><span>${p.d} · ${esc(p.m)}</span></div></div>`).join('')}</div>`:''}
+   ${debt>0?`<button class="btn" style="margin-top:12px" data-act="pay" data-id="${o.id}">Получить счёт на ${rub(debt)}</button>`:'<div class="pill ok" style="margin-top:12px">оплачен полностью</div>'}
+  </section>
+  <div class="h2">Документы заказа</div>
+  <section class="panel list">${docs.length?docs.map(([d,i])=>docRow(d,i)).join(''):'<div class="empty">Документы появятся по ходу заказа</div>'}</section>
+  <button class="btn ghost" data-act="chat" data-id="${o.id}">${I.chat.replace('<svg','<svg width="20" height="20"')} Написать менеджеру</button>
+ `);
+}
+function payScreen(id){
+ const o=S.orders.find(x=>x.id===id); if(!o) return home();
+ const debt=o.sum-o.paid;
+ return shell('Оплата '+o.id,`
+  <section class="panel" style="display:grid;gap:10px">
+   <div class="row between"><b>Счёт № ${318+S.orders.indexOf(o)}</b><span class="ex">пример</span></div>
+   <div class="small muted">ООО «Пример Трейд» · заказ ${o.id}</div>
+   <div class="big num" style="font-size:30px">${rub(debt)}</div>
+   <div class="bar"><i style="width:${Math.round(o.paid/o.sum*100)}%"></i></div>
+   <div class="row between small muted"><span>оплачено ${rub(o.paid)}</span><span>осталось ${rub(debt)}</span></div>
+  </section>
+  <section class="panel" style="display:grid;gap:8px">
+   <b class="small">Как оплатить</b>
+   <div class="small muted">Реквизиты счёта менеджер пришлёт в чат и на почту — по счёту оплата уходит напрямую нашему платёжному агенту, деньги доходят до поставщика за 1–2 дня.</div>
+   <div class="small muted">Назначение платежа: «Оплата по счёту ${318+S.orders.indexOf(o)} по заказу ${o.id}».</div>
+  </section>
+  ${debt>0?`<button class="btn bronze" data-act="payok" data-id="${o.id}">Я оплатил — отметить оплату</button>`:'<div class="panel" style="background:var(--good-soft);border-color:transparent"><b>Заказ оплачен полностью</b></div>'}
+  <button class="btn ghost" data-act="chat" data-id="${o.id}">${I.chat.replace('<svg','<svg width="20" height="20"')} Спросить про оплату</button>
+  <p class="hint">В рабочей версии здесь будет оплата картой или СБП и статус платежа из 1С в реальном времени.</p>`);
+}
+const DOCIC={'Бронь':'БР','Одобрение банка':'БАНК','ДДУ':'ДДУ','Выписка ЕГРН':'ЕГРН','Счёт':'СЧ','ДТ':'ДТ','Инвойс':'INV','CMR':'CMR','Договор':'ДОГ','УПД':'УПД','Отчёт агента':'ОА','Сертификат':'СЕР','Акт сверки':'АКТ'};
+function docRow(d,i){
+ return `<button class="li" data-act="doc" data-i="${i}"><div class="ic ${d.src==='1С'?'':'b'}">${DOCIC[d.t]}</div><div class="tx"><b>${d.t} ${esc(d.no)}</b><span>${d.d} · ${d.o}${d.sum?' · '+rub(d.sum):''}</span></div>${d.sign.includes('ждёт')?'<span class="pill warn">подписать</span>':I.chev}</button>`;
+}
+function docs(){
+ const types=['Все','Счёт','УПД','Отчёт агента','ДТ','CMR','Договор','Акт сверки'];
+ const list=S.docs.map((d,i)=>[d,i]).filter(([d])=>d.dir!=='re'&&(S.docFilter==='Все'||d.t===S.docFilter));
+ return shell('Документы',`
+  <div class="chips">${types.map(t=>`<button class="chip" data-docf="${t}" aria-pressed="${S.docFilter===t}">${t}</button>`).join('')}</div>
+  <section class="panel list">${list.map(([d,i])=>docRow(d,i)).join('')||'<div class="empty">Документов такого типа пока нет</div>'}</section>
+  <div class="btns"><button class="btn ghost" data-act="pack">Пакет для бухгалтерии</button><button class="btn ghost" data-act="sverka">Запросить акт сверки</button></div>
+  <p class="hint">Счета, УПД, акты и отчёты агента придут из 1С. ДТ, CMR, инвойсы и сертификаты менеджер прикрепляет к сделке в Битрикс24.</p>`);
+}
+function docSheet(i){
+ const d=S.docs[i];
+ const body=d.t==='Счёт'||d.t==='УПД'||d.t==='Отчёт агента'||d.t==='Акт сверки'
+  ?`<table><tr><th>Наименование</th><th>Сумма, ₽</th></tr><tr><td>${d.t==='Отчёт агента'?'Закупка товара и организация доставки по заказу '+d.o:'Агентское вознаграждение по заказу '+d.o}</td><td class="num">${d.sum?fmt(d.sum):'—'}</td></tr></table><div>Итого: <b class="num">${d.sum?rub(d.sum):'—'}</b></div>`
+  :`<table><tr><th>Заказ</th><td>${d.o}</td></tr><tr><th>Источник</th><td>${d.src}</td></tr><tr><th>Дата</th><td>${d.d}</td></tr></table>`;
+ const el=document.createElement('div');el.className='sheet';
+ el.innerHTML=`<div class="in" role="dialog" aria-label="${d.t}"><div class="grab"></div>
+  <div class="row between"><b style="font-size:17px">${d.t} ${esc(d.no)}</b><span class="ex">пример</span></div>
+  <div class="paper">${LOGO('stamp')}<h3>${d.t.toUpperCase()} ${esc(d.no)} от ${d.d}</h3>
+   <div>Исполнитель: ООО «Тримост Партнёрс»</div><div>Заказчик: ООО «Пример Трейд», ИНН 0000000000</div>${body}</div>
+  <dl class="kv small"><dt>Откуда документ</dt><dd>${d.src}</dd><dt>Подписание</dt><dd>${d.sign}</dd></dl>
+  ${d.sign.includes('ждёт')?'<button class="btn bronze" data-act="sign">Подписать в ЭДО</button>':''}
+  <div class="btns"><button class="btn ghost" data-act="dl">Скачать PDF</button><button class="btn" data-act="close">Закрыть</button></div></div>`;
+ el.addEventListener('click',e=>{const a=e.target.closest('[data-act]');if(e.target===el||a&&a.dataset.act==='close'){el.remove();return}
+  if(a&&a.dataset.act==='dl')toast('В рабочей версии откроется PDF из 1С');
+  if(a&&a.dataset.act==='sign'){d.sign='подписан в ЭДО';S.notes.forEach(n=>{if(n.t.includes('подпис'))n.new=false});el.remove();toast('Отчёт агента подписан');render()}});
+ document.body.appendChild(el);
+}
+
+/* расчёт — тот же движок, что в пульте импорта (сверен с книгой «Калькулятор импорта под ключ.xlsx») */
+const P={cny:12.495,usd:83.62,mk:0.01,pay:0.00318,vat:0.22,border:0.7,broker:15950,reserve:0.05,ins:0.004};
+const FEE=[[0,1231],[200000,2462],[450000,4924],[1200000,13541],[2700000,18465],[4200000,20313],[5500000,24623],[7000000,27080],[8000000,29545],[9000000,32008],[10000000,73860]];
+const CARRIERS=[
+ {n:'Авто · сборный груз',mode:'Авто',cur:'USD',kg:2.6,m3:330,m:'max',coef:0,min:80,fix:0,d:[18,25],note:'Китай → РФ, 2–3 машины в неделю'},
+ {n:'Авто · с фиксом за отправку',mode:'Авто',cur:'USD',kg:2.4,m3:300,m:'max',coef:0,min:100,fix:30,d:[20,28],note:'упаковка и документы включены'},
+ {n:'Ж/д · сборный',mode:'Ж/д',cur:'USD',kg:2.2,m3:280,m:'max',coef:0,min:110,fix:0,d:[25,35],note:'стабильный график, дешевле авто'},
+ {n:'Море + ж/д · крупные партии',mode:'Море + ж/д',cur:'USD',kg:0,m3:200,m:'m3',coef:0,min:150,fix:0,d:[40,55],note:'выгодно от 10 м³, дольше в пути'},
+ {n:'Авиа · срочно',mode:'Авиа',cur:'USD',kg:6.5,m3:0,m:'vol',coef:167,min:65,fix:0,d:[7,12],note:'объёмный вес: 1 м³ = 167 кг'}];
+let Clines=[
+ {name:'Светодиодные светильники',qty:500,price:38,kg:420,m3:2.6,duty:7.5},
+ {name:'Блоки питания',qty:500,price:12,kg:110,m3:0.6,duty:0},
+ {name:'Монтажные кронштейны',qty:1000,price:2.5,kg:180,m3:0.5,duty:8}];
+let Cc={from:'Гуанчжоу',to:'Москва',kind:'Опт',china:900,ins:true,cert:0,svh:6000,ru:18000,carrier:0};
+function cfreight(c,kg,m3){
+ const base=c.m==='vol'?Math.max(kg,m3*c.coef)*c.kg:c.m==='m3'?m3*c.m3:Math.max(kg*c.kg,m3*c.m3);
+ const rate=c.cur==='CNY'?P.cny:P.usd;
+ return (Math.max(base,c.min)+c.fix)*rate;
+}
+function ccompute(ci){
+ const c=CARRIERS[ci], k=P.cny*(1+P.mk);
+ const L=Clines.map(x=>({...x,rub:(+x.qty||0)*(+x.price||0)*k}));
+ const goods=L.reduce((s,x)=>s+x.rub,0), qty=L.reduce((s,x)=>s+(+x.qty||0),0);
+ const kg=L.reduce((s,x)=>s+(+x.kg||0),0), m3=L.reduce((s,x)=>s+(+x.m3||0),0);
+ const china=Cc.china*k, pay=(goods+china)*P.pay, intl=cfreight(c,kg,m3);
+ const ins=Cc.ins?goods*P.ins:0;
+ let duty=0,vat=0,ts=0;
+ L.forEach(x=>{const sh=goods?x.rub/goods:0,t=x.rub+sh*(intl*P.border+ins);ts+=t;const d=t*(+x.duty||0)/100;duty+=d;vat+=(t+d)*P.vat;});
+ let fee=0; for(const f of FEE){ if(ts>=f[0]) fee=f[1]; }
+ let rew=0;
+ if(goods) rew=Cc.kind==='Частный'?Math.max(goods*.10,5000):goods*(goods>=3e6?.04:goods>=1e6?.05:goods>=3e5?.06:.08);
+ const res=(fee+duty+vat)*P.reserve;
+ const direct=Cc.kind==='Частный'?500:1250;
+ const total=goods+pay+china+intl+ins+Cc.cert+Cc.svh+Cc.ru+P.broker+fee+duty+vat+res+rew;
+ return {c,goods,qty,kg,m3,china,pay,intl,ins,duty,vat,fee,res,rew,direct,total,unit:qty?(total-res)/qty:0,days:[c.d[0]+7,c.d[1]+15]};
+}
+function calcRes(){ return ccompute(Cc.carrier); }
+const CNY=P.cny;
+function calc(){
+ const all=CARRIERS.map((_,i)=>ccompute(i));
+ const best=all.reduce((b,x,i)=>x.total<all[b].total?i:b,0);
+ const r=all[Cc.carrier];
+ const row=(x,i)=>`<div style="display:grid;grid-template-columns:1fr 54px 60px 54px 52px 46px 30px;gap:6px;align-items:end">
+   <input class="inp" style="padding:9px 10px" data-cl="${i}" data-k="name" value="${esc(x.name)}" aria-label="Название товара">
+   <input class="inp num" style="padding:9px 8px" data-cl="${i}" data-k="qty" inputmode="numeric" value="${x.qty}" aria-label="Количество">
+   <input class="inp num" style="padding:9px 8px" data-cl="${i}" data-k="price" inputmode="decimal" value="${x.price}" aria-label="Цена за штуку в юанях">
+   <input class="inp num" style="padding:9px 8px" data-cl="${i}" data-k="kg" inputmode="decimal" value="${x.kg}" aria-label="Вес в кг">
+   <input class="inp num" style="padding:9px 8px" data-cl="${i}" data-k="m3" inputmode="decimal" value="${x.m3}" aria-label="Объём в м³">
+   <input class="inp num" style="padding:9px 8px" data-cl="${i}" data-k="duty" inputmode="decimal" value="${x.duty}" aria-label="Пошлина, %">
+   <button class="x" type="button" data-act="cldel" data-i="${i}" aria-label="Удалить позицию">×</button></div>`;
+ return shell('Расчёт под ключ',`
+  <div class="panel" style="display:grid;gap:8px">
+   <div class="row between small muted"><span>Позиции заказа</span><span>кол-во · ¥/шт · кг · м³ · пошлина %</span></div>
+   ${Clines.map(row).join('')}
+   <button class="btn ghost" style="min-height:40px" data-act="cladd">${I.plus.replace('<svg','<svg width="16" height="16"')} Добавить позицию</button>
+  </div>
+  <section class="panel" style="display:grid;gap:12px">
+   <div class="grid2"><label class="f">Доставка по Китаю до склада, ¥<input class="inp num" id="c-china" inputmode="numeric" value="${Cc.china}"></label>
+   <label class="f">Сертификация / декларация ЕАЭС, ₽<input class="inp num" id="c-cert" inputmode="numeric" value="${Cc.cert}"></label></div>
+   <div class="grid2"><label class="f">Склад и выгрузка, ₽<input class="inp num" id="c-svh" inputmode="numeric" value="${Cc.svh}"></label>
+   <label class="f">Доставка по России, ₽<input class="inp num" id="c-ru" inputmode="numeric" value="${Cc.ru}"></label></div>
+   <div class="row between" style="gap:10px">
+    <label class="f" style="flex:1">Тип клиента<div class="seg" style="grid-template-columns:1fr 1fr">${['Опт','Частный'].map(k=>`<button data-kind="${k}" aria-pressed="${Cc.kind===k}">${k}</button>`).join('')}</div></label>
+    <label class="row" style="gap:8px;font-size:13px;font-weight:600"><input type="checkbox" class="toggle" id="c-ins" ${Cc.ins?'checked':''}> Страховать груз</label>
+   </div>
+  </section>
+  <div class="h2">Варианты доставки</div>
+  <div class="panel" style="display:grid;gap:8px;padding:10px">
+   ${all.map((x,i)=>`<button data-act="ccar" data-i="${i}" style="display:grid;grid-template-columns:1fr auto;gap:2px 10px;text-align:left;border:1.5px solid ${i===Cc.carrier?'var(--bronze)':'var(--line)'};border-radius:12px;padding:10px 12px;background:${i===Cc.carrier?'var(--bronze-soft)':'var(--panel)'}">
+     <b style="font-size:14px">${x.c.n}</b><b class="num" style="font-size:15px">${rub(x.total)}</b>
+     <span class="small muted">${x.c.mode} · ${x.days[0]}–${x.days[1]} дней · ${x.kg?fmt(x.kg)+' кг':'—'} · ${String(x.m3.toFixed(1)).replace('.',',')} м³</span>
+     <span class="small">${i===best?'<span class="pill ok">выгоднее всех</span>':`<span class="muted num">+${rub(x.total-all[best].total)}</span>`}</span>
+     <span class="small muted" style="grid-column:1/-1">${x.c.note}</span></button>`).join('')}
+  </div>
+  <section class="panel total" id="c-out">${calcOut(r)}</section>
+  <button class="btn bronze" data-act="fromcalc">Оформить заявку по этому расчёту</button>
+  <p class="hint">Курсы на 17.10.2026: $ — ${String(P.usd).replace('.',',')} ₽ · ¥ — ${String(P.cny).replace('.',',')} ₽. Расчёт предварительный: точную цену менеджер подтвердит после проверки кода ТН ВЭД.</p>`);
+}
+function calcOut(r){
+ return `<div class="row between"><span class="muted small">Под ключ до двери · ${r.c.n}</span><span class="ex" style="background:rgba(255,255,255,.12);color:#F2C28C">пример</span></div>
+  <div class="big num">${rub(r.total)}</div>
+  <div class="muted small">срок ${r.days[0]}–${r.days[1]} дней · 1 шт. под ключ ${rub(r.unit)} · резерв таможни ${rub(r.res)} вернём, если не понадобится</div><hr>
+  <dl class="kv small num">
+   <dt>Товар (${fmt(r.goods/P.cny)} ¥ по курсу с наценкой банка)</dt><dd>${rub(r.goods)}</dd>
+   <dt>Платёжный агент</dt><dd>${rub(r.pay)}</dd>
+   <dt>Доставка по Китаю</dt><dd>${rub(r.china)}</dd>
+   <dt>${r.c.n}</dt><dd>${rub(r.intl)}</dd>
+   ${r.ins?`<dt>Страховка груза</dt><dd>${rub(r.ins)}</dd>`:''}
+   <dt>Склад, выгрузка</dt><dd>${rub(r.svh)}</dd>
+   <dt>Доставка по России</dt><dd>${rub(r.ru)}</dd>
+   <dt>Пошлина</dt><dd>${rub(r.duty)}</dd>
+   <dt>НДС при ввозе 22%</dt><dd>${rub(r.vat)}</dd>
+   <dt>Таможенный сбор</dt><dd>${rub(r.fee)}</dd>
+   <dt>Таможенный брокер</dt><dd>${rub(P.broker)}</dd>
+   <dt>Резерв таможни (возвратный)</dt><dd>${rub(r.res)}</dd>
+   ${r.cert?`<dt>Сертификация</dt><dd>${rub(r.cert)}</dd>`:''}
+   <dt>Наше вознаграждение</dt><dd>${rub(r.rew)}</dd></dl>`;
+}
+
+/* заявка */
+function newreq(pref){
+ const p=pref||{};
+ return shell('Новая заявка',`
+  <section class="panel" style="display:grid;gap:12px">
+   <label class="f">Что нужно привезти<input class="inp" id="r-what" placeholder="Например, светодиодные панели" value="${esc(p.what||'')}"></label>
+   <div class="grid2"><label class="f">Откуда<input class="inp" id="r-from" value="${esc(p.from||'Гуанчжоу')}"></label><label class="f">Куда<input class="inp" id="r-to" value="${esc(p.to||'Москва')}"></label></div>
+   <div class="grid2"><label class="f">Вес, кг<input class="inp num" id="r-kg" inputmode="decimal" value="${p.kg||''}"></label><label class="f">Объём, м³<input class="inp num" id="r-m3" inputmode="decimal" value="${p.m3||''}"></label></div>
+   <label class="f">Чем помочь<select class="inp" id="r-svc"><option>Под ключ: поиск, оплата, доставка, таможня</option><option>Только доставка и таможня</option><option>Найти поставщика</option><option>Проверить фабрику</option></select></label>
+   <label class="f">Комментарий<textarea class="inp" id="r-note" rows="3" placeholder="Сроки, ссылка на товар, вопросы"></textarea></label>
+  </section>
+  <button class="btn bronze" data-act="sendreq" data-mode="${p.mode||'Авто'}">Отправить заявку</button>
+  <p class="hint">В рабочей версии заявка попадёт в Битрикс24, в воронку «Импорт», а менеджер ответит в чате и в Telegram.</p>`,{noTab:true});
+}
+function sendReq(mode){
+ const v=id=>document.getElementById(id).value.trim();
+ if(!v('r-what')){toast('Расскажите, пожалуйста, что нужно привезти');document.getElementById('r-what').focus();return}
+ const n=143+S.orders.filter(o=>o.mine).length;
+ const o={id:'TRM-0'+n,title:v('r-what'),from:v('r-from')||'Китай',to:v('r-to')||'Россия',mode:mode||'Авто',kg:+v('r-kg').replace(',','.')||0,m3:+v('r-m3').replace(',','.')||0,
+  sum:0,paid:0,stage:1,carrier:'будет назначен',track:'—',carrier2:'',track2:'',dates:['сегодня','','','','','','','',''],plan:'уточняется',issue:false,mine:true};
+ S.orders.unshift(o);S.notes.unshift({t:o.id+': заявка принята',d:'Менеджер свяжется в течение часа в рабочее время.',h:'сейчас',o:o.id,new:true});
+ save();S.tab='orders';S.stack=[{screen:'order',arg:o.id}];render();window.scrollTo(0,0);toast('Заявка '+o.id+' отправлена');
+}
+
+/* недвижимость */
+const RE={buy:['Купить','Новостройка или вторичка, подбор и проверка',I.house],sell:['Продать','Оценка, показы, сделка',I.sell],rent:['Снять или сдать','Квартира, склад, офис',I.rent],mort:['Ипотека','Подбор программы и одобрение',I.bank]};
+function realty(){
+ return shell('Недвижимость',`
+  <div style="font-size:20px;font-weight:800;margin:4px 2px 0">Чем можем помочь?</div>
+  <div class="tiles">${Object.entries(RE).map(([k,[t,s,ic]])=>`<button class="tile" data-act="re" data-k="${k}">${ic}<div><b>${t}</b><br><span>${s}</span></div></button>`).join('')}</div>
+  <p class="hint">Раздел недвижимости во второй версии получит подборки объектов и этапы сделки. Сейчас здесь только заявка.</p>`,{noTab:true});
+}
+function reForm(k){
+ const [t]=RE[k];
+ const extra={buy:`<div class="grid2"><label class="f">Бюджет, ₽<input class="inp num" id="re-b" inputmode="numeric" placeholder="8 000 000"></label><label class="f">Комнат<select class="inp"><option>Студия</option><option>1</option><option selected>2</option><option>3+</option></select></label></div>`,
+  sell:`<label class="f">Адрес объекта<input class="inp" placeholder="Город, улица, дом"></label><label class="f">Площадь, м²<input class="inp num" inputmode="decimal" placeholder="54"></label>`,
+  rent:`<div class="seg" style="grid-template-columns:1fr 1fr"><button aria-pressed="true" data-act="noop">Снять</button><button aria-pressed="false" data-act="noop">Сдать</button></div><label class="f">Тип<select class="inp"><option>Квартира</option><option>Склад</option><option>Офис</option></select></label>`,
+  mort:`<div class="grid2"><label class="f">Стоимость, ₽<input class="inp num" id="m-p" inputmode="numeric" value="9000000"></label><label class="f">Взнос, ₽<input class="inp num" id="m-d" inputmode="numeric" value="2700000"></label></div><div class="grid2"><label class="f">Ставка, %<input class="inp num" id="m-r" inputmode="decimal" value="6"></label><label class="f">Срок, лет<input class="inp num" id="m-y" inputmode="numeric" value="20"></label></div><div class="panel" style="background:var(--soft);border:0"><div class="small muted">Платёж в месяц <span class="ex">пример</span></div><div id="m-out" style="font-size:24px;font-weight:800" class="num"></div></div>`}[k];
+ return shell(t,`<section class="panel" style="display:grid;gap:12px">${extra}
+  <label class="f">Город<input class="inp" value="Москва"></label>
+  <label class="f">Как с вами связаться<input class="inp" placeholder="+7 900 000-00-00" inputmode="tel"></label></section>
+  <button class="btn bronze" data-act="resend" data-k="${k}">Отправить заявку</button>
+  <p class="hint">Заявка уйдёт в воронку «Недвижимость» в Битрикс24 (в рабочей версии).</p>`,{noTab:true});
+}
+function mortgage(){
+ const g=id=>+String(document.getElementById(id)?.value||0).replace(/\s/g,'').replace(',','.');
+ const P=g('m-p')-g('m-d'), r=g('m-r')/1200, n=g('m-y')*12, out=document.getElementById('m-out');
+ if(!out) return; const pay=r>0?P*r/(1-Math.pow(1+r,-n)):P/n; out.textContent=n>0&&P>0?rub(pay):'—';
+ const sub=document.getElementById('m-sub'); if(sub) sub.textContent=n>0&&P>0?`кредит ${rub(P)} · переплата ${rub(pay*n-P)}`:'';
+}
+
+/* недвижимость: главная, подбор, сделка, ипотека */
+const RE_ST=[['Заявка','вы или агент'],['Подбор объектов','агент'],['Показ','агент и вы'],['Бронь','застройщик'],['Одобрение ипотеки','банк'],['Договор (ДДУ)','застройщик, юрист'],['Регистрация','Росреестр'],['Ключи','застройщик']];
+const objPic=k=>{const b=['#C9D6E0','#D8CFC0','#CBD9CF'][k];return `<svg viewBox="0 0 96 96" aria-hidden="true"><rect width="96" height="96" fill="${b}"/><rect x="14" y="30" width="30" height="66" fill="#002C4A" opacity=".85"/><rect x="48" y="14" width="34" height="82" fill="#0D3D61" opacity=".9"/>${[0,1,2,3,4,5].map(r=>`<rect x="20" y="${38+r*9}" width="6" height="5" fill="#F2D3A8"/><rect x="32" y="${38+r*9}" width="6" height="5" fill="#F2D3A8" opacity="${r%2?1:.4}"/><rect x="54" y="${22+r*11}" width="7" height="6" fill="#F2D3A8" opacity="${r%3?1:.45}"/><rect x="68" y="${22+r*11}" width="7" height="6" fill="#F2D3A8"/>`).join('')}</svg>`};
+const roomsTxt=o=>o.rooms==='Студия'?'Студия':o.rooms+'-комн.';
+const m2=o=>String(o.m2).replace('.',',');
+function objCard(o){const fav=S.favs.includes(o.id);
+ return `<div style="position:relative"><button class="obj" data-act="obj" data-id="${o.id}"><div class="ph">${objPic(o.img)}</div><div style="min-width:0;padding-right:30px"><b>${o.zk}</b><div class="small muted">${o.dist}</div><div class="price num">${rub(o.price)}</div><div class="small muted num">${roomsTxt(o)} · ${m2(o)} м² · ${o.floor} эт.</div><div class="small muted num">${fmt(o.price/o.m2)} ₽/м² · ${o.ready==='сдан'?'дом сдан':'сдача '+o.ready}</div></div></button>
+ <button class="fav" data-act="fav" data-id="${o.id}" aria-pressed="${fav}" aria-label="В избранное"><svg viewBox="0 0 24 24" fill="${fav?'currentColor':'none'}" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></button></div>`}
+function reHome(){
+ const dl=S.deal,o=S.objects.find(x=>x.id===dl.obj);
+ return shell('Тримост',`
+  <section class="panel hello">${LOGO('arch')}
+   <div class="muted small">Добрый день, Сергей</div>
+   <b>Покупка квартиры</b> <span class="ex">пример</span>
+   <div class="small" style="margin-top:6px">${o.zk} · ${roomsTxt(o)}, ${m2(o)} м²</div>
+   <div class="bar" style="margin-top:12px;background:rgba(255,255,255,.15)"><i style="width:${Math.round(dl.stage/8*100)}%"></i></div>
+   <div class="row between small muted" style="margin-top:6px"><span>Сейчас: ${RE_ST[dl.stage][0].toLowerCase()}</span><span>этап ${dl.stage+1} из 8</span></div>
+  </section>
+  <div style="font-size:18px;font-weight:800;margin:2px 2px -4px">Чем можем помочь?</div>
+  <div class="tiles">${Object.entries(RE).map(([k,[t,s2,ic]])=>`<button class="tile" data-act="re" data-k="${k}">${ic}<div><b>${t}</b><br><span>${s2}</span></div></button>`).join('')}</div>
+  ${S.shows.length?`<button class="panel li" style="padding:12px 14px;border-radius:14px" data-act="myshows"><div class="ic b">${S.shows[0].day.split(' ')[0]}</div><div class="tx"><b>Показ: ${S.shows[0].zk}</b><span>${S.shows[0].day}, ${S.shows[0].time} · ${S.shows.length>1?'ещё '+(S.shows.length-1):'агент Олег'}</span></div>${I.chev}</button>`:''}
+  <div class="h2">Сервисы</div>
+  <div class="tools">
+   <button class="q" data-act="zklist">${I.house}Новостройки</button>
+   <button class="q" data-act="rentlist">${I.rent}Аренда</button>
+   <button class="q" data-act="valuation">${I.sell}Оценка квартиры</button>
+   <button class="q" data-act="tax">${I.calc}Налоговый вычет</button>
+   <button class="q" data-act="compare">${I.swap}Сравнить избранное</button>
+   <button class="q" data-act="guide">${I.doc}Как проходит сделка</button>
+  </div>
+  <div class="row between"><div class="h2" style="margin:6px 2px 0">Новое в вашей подборке</div><button class="chip" data-tab="objects">Все ${S.objects.length}</button></div>
+  ${S.objects.slice(1,3).map(objCard).join('')}
+  <div class="h2">Ваш агент</div>
+  <div class="panel row"><div class="li" style="padding:0;border:0"><div class="ic">ОЛ</div><div class="tx"><b>Олег</b><span>агент по недвижимости · показы ежедневно</span></div></div>
+   <button class="iconbtn" style="background:var(--soft);color:var(--navy)" data-act="chat" data-id="RE-0021" aria-label="Написать">${I.chat}</button></div>
+  <p class="hint">Объекты, цены и сроки — пример для показа. В рабочей версии подборку собирает агент в Битрикс24.</p>`);
+}
+function objects(){
+ const rooms=['Все','Студия','1','2','3+','Избранное'];
+ const list=S.objects.filter(o=>S.roomF==='Все'||(S.roomF==='Избранное'?S.favs.includes(o.id):o.rooms===S.roomF));
+ return shell('Подбор',`
+  <div class="chips">${rooms.map(r=>`<button class="chip" data-roomf="${r}" aria-pressed="${S.roomF===r}">${r==='Все'||r==='Студия'||r==='Избранное'?r:r+'-комн.'}${r==='Избранное'?' · '+S.favs.length:''}</button>`).join('')}</div>
+  ${list.map(objCard).join('')||'<div class="panel empty">Здесь пока пусто. Отметьте понравившиеся объекты сердцем.</div>'}
+  <button class="btn ghost" data-act="re" data-k="buy">Изменить параметры подбора</button>`);
+}
+function objView(id){
+ const o=S.objects.find(x=>x.id===id);const dp=Math.round(o.price*0.3);
+ return shell(o.zk,`
+  <div class="ph" style="aspect-ratio:16/10;border-radius:var(--r)">${objPic(o.img).replace('viewBox="0 0 96 96"','viewBox="0 18 96 60" preserveAspectRatio="xMidYMid slice"')}</div>
+  <section class="panel"><div class="row between"><b style="font-size:22px" class="num">${rub(o.price)}</b><span class="ex">пример</span></div>
+   <dl class="kv" style="margin-top:10px"><dt>Квартира</dt><dd>${roomsTxt(o)}, ${m2(o)} м²</dd><dt>Этаж</dt><dd>${o.floor}</dd><dt>Цена за м²</dt><dd class="num">${fmt(o.price/o.m2)} ₽</dd><dt>Сдача</dt><dd>${o.ready}</dd><dt>Где</dt><dd>${o.dist}</dd><dt>Ипотека от</dt><dd class="num">${rub(mPay(o.price-dp,6,20))}/мес</dd></dl>
+   <div class="small muted" style="margin-top:8px">Платёж при взносе 30% и ставке 6% на 20 лет, условно.</div></section>
+  <div class="btns"><button class="btn bronze" data-act="show" data-id="${o.id}">Записаться на показ</button><button class="btn ghost" data-act="fav" data-id="${o.id}">${S.favs.includes(o.id)?'В избранном':'В избранное'}</button></div>
+  <button class="btn ghost" data-act="chat" data-id="RE-0021">${I.chat.replace('<svg','<svg width="20" height="20"')} Спросить агента</button>`,{noTab:true});
+}
+function deal(){
+ const dl=S.deal,o=S.objects.find(x=>x.id===dl.obj);
+ const docs=S.docs.map((d,i)=>[d,i]).filter(([d])=>d.dir==='re');
+ const credit=dl.price-dl.down;
+ const steps=RE_ST.map(([t,src],i)=>{const cls=i<dl.stage?'done':(i===dl.stage?'now':'');return `<li class="st ${cls}"><span class="mk">${cls==='done'?I.check:''}</span><div><div class="t">${t}</div><div class="src">${src}</div></div><div class="d num">${dl.dates[i]||''}</div></li>`}).join('');
+ return shell('Сделка '+dl.id,`
+  <button class="obj" data-act="obj" data-id="${o.id}"><div class="ph">${objPic(o.img)}</div><div style="min-width:0"><b>${o.zk}</b><div class="small muted">${o.dist}</div><div class="price num">${rub(o.price)}</div><div class="small muted">${roomsTxt(o)}, ${m2(o)} м² · <span class="ex">пример</span></div></div></button>
+  <div class="h2">Этапы сделки</div>
+  <section class="panel"><ol class="steps">${steps}</ol></section>
+  <div class="h2">Деньги</div>
+  <section class="panel"><dl class="kv num"><dt>Стоимость</dt><dd>${rub(dl.price)}</dd><dt>Первый взнос</dt><dd>${rub(dl.down)}</dd><dt>Кредит банка</dt><dd>${rub(credit)}</dd><dt>Платёж в месяц</dt><dd>${rub(mPay(credit,dl.rate,dl.years))}</dd></dl></section>
+  <div class="h2">Документы сделки</div>
+  <section class="panel list">${docs.map(([d,i])=>docRow(d,i)).join('')}</section>
+  <button class="btn ghost" data-act="chat" data-id="RE-0021">${I.chat.replace('<svg','<svg width="20" height="20"')} Написать агенту</button>`);
+}
+function mPay(P,rate,years){const r=rate/1200,n=years*12;return r>0?P*r/(1-Math.pow(1+r,-n)):P/n}
+function mortTab(){
+ return shell('Ипотека',`<section class="panel" style="display:grid;gap:12px">
+  <div class="grid2"><label class="f">Стоимость, ₽<input class="inp num" id="m-p" inputmode="numeric" value="12480000"></label><label class="f">Взнос, ₽<input class="inp num" id="m-d" inputmode="numeric" value="3744000"></label></div>
+  <div class="grid2"><label class="f">Ставка, %<input class="inp num" id="m-r" inputmode="decimal" value="6"></label><label class="f">Срок, лет<input class="inp num" id="m-y" inputmode="numeric" value="20"></label></div></section>
+  <section class="panel total"><div class="row between"><span class="muted small">Платёж в месяц</span><span class="ex" style="background:rgba(255,255,255,.12);color:#9FD9C2">пример</span></div><div class="big num" id="m-out"></div><div class="muted small" id="m-sub"></div></section>
+  <div class="h2">Программы</div>
+  <section class="panel list">
+   <button class="li" data-mrate="6"><div class="ic b">6%</div><div class="tx"><b>Семейная ипотека</b><span>новостройки, семьи с детьми · условия уточняйте</span></div>${I.chev}</button>
+   <button class="li" data-mrate="2"><div class="ic b">2%</div><div class="tx"><b>Дальневосточная</b><span>ДФО и отдельные категории</span></div>${I.chev}</button>
+   <button class="li" data-mrate="20"><div class="ic b">20%</div><div class="tx"><b>Рыночная</b><span>любое жильё, ставка условная</span></div>${I.chev}</button>
+  </section>
+  <button class="btn bronze" data-act="re" data-k="mort">Подать заявку в банки через нас</button>
+  <p class="hint">Ставки здесь условные, это пример. Актуальные условия агент проверит в банках-партнёрах.</p>`);
+}
+
+/* недвижимость: расширенные экраны */
+const yardPic=()=>`<svg viewBox="0 0 160 100" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="160" height="100" fill="#DCE8DF"/><rect y="70" width="160" height="30" fill="#BFD3C4"/><rect x="10" y="20" width="40" height="55" fill="#0D3D61" opacity=".85"/><rect x="112" y="10" width="40" height="65" fill="#002C4A" opacity=".85"/>${[0,1,2,3,4].map(i=>`<circle cx="${62+i*10}" cy="${62-(i%2)*6}" r="9" fill="#2E7D64" opacity=".8"/>`).join('')}<rect x="66" y="80" width="30" height="4" rx="2" fill="#AA6A22"/><circle cx="78" cy="74" r="4" fill="#AA6A22"/></svg>`;
+function planPic(o){
+ const n=o.rooms==='Студия'?0:o.rooms==='3+'?3:+o.rooms, A=o.m2, k=n===0?Math.round(A*0.62):Math.round(A*0.18);
+ const roomA=n?Math.round((A*0.62)/n*10)/10:0, bath=Math.round(A*0.07*10)/10, hall=Math.round((A-k-roomA*n-bath)*10)/10;
+ const W=150,H=90,x0=5,y0=5; const lab=(x,y,t,a)=>`<text x="${x}" y="${y}" font-size="6.5" font-family="Golos Text,Arial" fill="#0F2333" text-anchor="middle">${t}</text><text x="${x}" y="${y+8}" font-size="6" font-family="Golos Text,Arial" fill="#5D6B78" text-anchor="middle">${String(a).replace('.',',')} м²</text>`;
+ let r=`<rect x="${x0}" y="${y0}" width="${W}" height="${H}" fill="#fff" stroke="#002C4A" stroke-width="2"/>`;
+ if(n===0){r+=`<line x1="${x0+W*0.7}" y1="${y0}" x2="${x0+W*0.7}" y2="${y0+H}" stroke="#002C4A" stroke-width="1.2"/><line x1="${x0+W*0.7}" y1="${y0+H*0.5}" x2="${x0+W}" y2="${y0+H*0.5}" stroke="#002C4A" stroke-width="1.2"/>`+lab(x0+W*0.35,y0+H/2,'Комната-кухня',k)+lab(x0+W*0.85,y0+H*0.25,'Санузел',bath)+lab(x0+W*0.85,y0+H*0.75,'Прихожая',Math.round((A-k-bath)*10)/10);}
+ else{const cw=W/(n+1);for(let i=1;i<=n;i++)r+=`<line x1="${x0+cw*i}" y1="${y0}" x2="${x0+cw*i}" y2="${y0+H*0.62}" stroke="#002C4A" stroke-width="1.2"/>`;
+  r+=`<line x1="${x0}" y1="${y0+H*0.62}" x2="${x0+W}" y2="${y0+H*0.62}" stroke="#002C4A" stroke-width="1.2"/><line x1="${x0+W*0.6}" y1="${y0+H*0.62}" x2="${x0+W*0.6}" y2="${y0+H}" stroke="#002C4A" stroke-width="1.2"/>`;
+  r+=lab(x0+cw/2,y0+H*0.3,'Кухня',k);for(let i=1;i<=n;i++)r+=lab(x0+cw*i+cw/2,y0+H*0.3,'Комната',roomA);
+  r+=lab(x0+W*0.3,y0+H*0.8,'Прихожая',hall)+lab(x0+W*0.8,y0+H*0.8,'Санузел',bath);}
+ r+=`<rect x="${x0+W*0.15}" y="${y0-1.5}" width="${W*0.2}" height="3" fill="#9FC6E8"/><rect x="${x0+W*0.6}" y="${y0-1.5}" width="${W*0.2}" height="3" fill="#9FC6E8"/>`;
+ return `<svg viewBox="0 0 160 100" aria-hidden="true"><rect width="160" height="100" fill="#F3F5F7"/>${r}</svg>`;
+}
+const INFRA={'z1':[['Метро','9 мин пешком'],['Школа','350 м'],['Детский сад','во дворе'],['Набережная','5 мин'],['ТЦ','1,2 км'],['Поликлиника','800 м']],
+ 'z2':[['Лес','150 м'],['Школа','600 м'],['Детский сад','400 м'],['Остановка','3 мин'],['Супермаркет','в доме'],['Центр','20 мин на авто']],
+ 'z3':[['Метро','12 мин'],['Школа','500 м'],['Фитнес','в комплексе'],['Парк','300 м'],['ТЦ','900 м'],['Аэропорт','25 мин']],
+ 'z4':[['Парк','100 м'],['Метро','7 мин'],['Школа','450 м'],['Детский сад','250 м'],['ТЦ','1 км'],['Вуз','15 мин']]};
+const infraHtml=z=>`<div class="infra">${(INFRA[z]||[]).map(([a,b])=>`<div><b>${a}</b><span class="muted">${b}</span></div>`).join('')}</div>`;
+function objFull(id){
+ const o=S.objects.find(x=>x.id===id), z=S.zk.find(x=>x.id===o.z);
+ const dp=Math.round(o.price*0.3), fav=S.favs.includes(o.id), shown=S.shows.find(x=>x.obj===o.id);
+ return shell(o.zk,`
+  <div class="gal"><div>${objPic(o.img).replace('viewBox="0 0 96 96"','viewBox="0 18 96 60" preserveAspectRatio="xMidYMid slice"')}<span class="cap">Фасад · 1/3</span></div><div>${yardPic()}<span class="cap">Двор · 2/3</span></div><div>${planPic(o)}<span class="cap">Планировка · 3/3</span></div></div>
+  <div class="small muted" style="text-align:center;margin-top:-6px">листайте фото вбок · изображения условные</div>
+  <section class="panel"><div class="row between"><b style="font-size:24px" class="num">${rub(o.price)}</b><span class="ex">пример</span></div>
+   <div class="small muted num" style="margin-top:2px">${fmt(o.price/o.m2)} ₽ за м² · ${o.dist}</div>
+   <dl class="kv" style="margin-top:12px"><dt>Квартира</dt><dd>${roomsTxt(o)}, ${m2(o)} м²</dd><dt>Этаж</dt><dd>${o.floor}</dd><dt>Сдача</dt><dd>${o.ready}</dd><dt>Отделка</dt><dd>${z.cls==='Бизнес'?'без отделки':'white box'}</dd><dt>Потолки</dt><dd>${z.cls==='Бизнес'?'3,1 м':'2,8 м'}</dd><dt>Дом</dt><dd>монолит-кирпич</dd><dt>Застройщик</dt><dd>${z.dev}</dd></dl></section>
+  <div class="h2">Ипотека на эту квартиру</div>
+  <section class="panel" style="display:grid;gap:10px">
+   <div class="row between small"><span class="muted">Первый взнос</span><b class="num" id="od-dv">30% · ${rub(dp)}</b></div>
+   <input type="range" id="od-down" min="15" max="70" step="5" value="30" data-price="${o.price}" aria-label="Первый взнос">
+   <div class="row between"><span class="muted small">Платёж при 6% на 20 лет</span><b class="num" style="font-size:20px" id="od-pay">${rub(mPay(o.price-dp,6,20))}</b></div>
+  </section>
+  <div class="h2">Рядом с домом</div>
+  ${infraHtml(o.z)}
+  <button class="panel li" style="padding:12px 14px" data-act="zk" data-id="${z.id}"><div class="ic b">ЖК</div><div class="tx"><b>${z.name}</b><span>готовность ${z.done}% · ${z.left} квартир в продаже</span></div>${I.chev}</button>
+  ${shown?`<div class="panel" style="background:var(--good-soft);border-color:transparent"><b>Вы записаны на показ</b><div class="small muted">${shown.day}, ${shown.time}. Олег встретит вас у входа в офис продаж.</div></div>`:''}
+  <div class="btns"><button class="btn bronze" data-act="book" data-id="${o.id}">${shown?'Перенести показ':'Записаться на показ'}</button><button class="btn ghost" data-act="fav" data-id="${o.id}">${fav?'В избранном':'В избранное'}</button></div>
+  <button class="btn ghost" data-act="chat" data-id="RE-0021">${I.chat.replace('<svg','<svg width="20" height="20"')} Спросить агента</button>`,{noTab:true});
+}
+function bookShow(id){
+ const o=S.objects.find(x=>x.id===id); const wd=['вс','пн','вт','ср','чт','пт','сб'], mn=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
+ const days=[1,2,3,4,5].map(i=>{const t=new Date(Date.now()+i*864e5);return `${t.getDate()} ${mn[t.getMonth()]}, ${wd[t.getDay()]}`});
+ S._bk=S._bk&&S._bk.id===id?S._bk:{id,day:days[0],time:''};
+ const times=['10:00','11:30','13:00','15:00','16:30','18:00','19:30','20:30'];
+ return shell('Запись на показ',`
+  <section class="panel"><b>${o.zk}</b><div class="small muted">${roomsTxt(o)}, ${m2(o)} м² · ${o.dist}</div></section>
+  <div class="h2">День</div>
+  <div class="chips">${days.map(dd=>`<button class="chip" data-bkday="${dd}" aria-pressed="${S._bk.day===dd}">${dd}</button>`).join('')}</div>
+  <div class="h2">Время</div>
+  <div class="slot">${times.map((t,i)=>`<button class="chip" data-bktime="${t}" aria-pressed="${S._bk.time===t}" ${(i+S._bk.day.length)%4===0?'disabled':''}>${t}</button>`).join('')}</div>
+  <div class="small muted">Зачёркнутое время уже занято. Показ длится около 40 минут.</div>
+  <section class="panel" style="display:grid;gap:10px"><label class="f">Сколько человек придёт<select class="inp" id="bk-n"><option>1</option><option selected>2</option><option>3+</option></select></label>
+   <label class="f">Пожелания<input class="inp" id="bk-note" placeholder="Например, посмотреть ещё квартиру на высоком этаже"></label></section>
+  <button class="btn bronze" data-act="bkok" data-id="${id}">Подтвердить показ</button>`,{noTab:true});
+}
+function myShows(){
+ return shell('Мои показы',`${S.shows.length?`<section class="panel list">${S.shows.map((x,i)=>`<button class="li" data-act="obj" data-id="${x.obj}"><div class="ic b">${x.time}</div><div class="tx"><b>${x.zk}</b><span>${x.day} · ${x.flat}</span></div>${I.chev}</button>`).join('')}</section>`:'<div class="panel empty">Показов пока нет. Выберите квартиру в подборе и нажмите «Записаться на показ».</div>'}
+ <button class="btn ghost" data-tab="objects">Перейти в подбор</button>`,{noTab:true});
+}
+function zkList(){
+ return shell('Новостройки',`<div class="small muted">${S.zk.length} жилых комплекса, где мы работаем с застройщиком напрямую · пример</div>
+ ${S.zk.map(z=>`<button class="obj" data-act="zk" data-id="${z.id}"><div class="ph">${objPic(z.img)}</div><div style="min-width:0"><b>${z.name}</b><div class="small muted">${z.city} · ${z.cls}</div><div class="price num">от ${rub(z.from)}</div><div class="small muted">${z.ready==='сдан'?'дом сдан':'сдача '+z.ready} · ${z.left} квартир</div><div class="bar" style="margin-top:6px"><i style="width:${z.done}%"></i></div></div></button>`).join('')}`,{noTab:true});
+}
+function zkView(id){
+ const z=S.zk.find(x=>x.id===id), flats=S.objects.filter(o=>o.z===id);
+ return shell(z.name,`
+  <div class="gal"><div>${objPic(z.img).replace('viewBox="0 0 96 96"','viewBox="0 18 96 60" preserveAspectRatio="xMidYMid slice"')}<span class="cap">Фасад</span></div><div>${yardPic()}<span class="cap">Двор</span></div></div>
+  <section class="panel" style="display:grid;gap:10px"><div class="row between"><b>${z.city}</b><span class="pill go">${z.cls}</span></div><div>${z.about}</div>
+   <dl class="kv small"><dt>Застройщик</dt><dd>${z.dev}</dd><dt>Сдача</dt><dd>${z.ready}</dd><dt>Цены</dt><dd class="num">от ${rub(z.from)}</dd><dt>В продаже</dt><dd>${z.left} квартир</dd></dl></section>
+  <div class="h2">Ход строительства</div>
+  <section class="panel" style="display:grid;gap:8px"><div class="row between"><span>Готовность</span><b class="num">${z.done}%</b></div><div class="bar"><i style="width:${z.done}%"></i></div>
+   <div class="small muted">${z.done>=100?'Дом сдан, ключи выдаются.':z.done>60?'Идут фасадные работы и инженерные сети.':'Возводится каркас, ведётся монолит.'} Фотоотчёт агент присылает раз в месяц.</div></section>
+  <div class="h2">Рядом</div>${infraHtml(z.id)}
+  <div class="h2">Квартиры в подборке</div>
+  ${flats.length?flats.map(objCard).join(''):'<div class="panel empty">В вашей подборке квартир из этого ЖК пока нет</div>'}
+  <button class="btn bronze" data-act="re" data-k="buy">Подобрать квартиру здесь</button>`,{noTab:true});
+}
+function rentList(){
+ const types=['Квартиры','Склады','Офисы'], list=S.rent.filter(r=>r.t===S.rentF);
+ return shell('Аренда',`<div class="chips">${types.map(t=>`<button class="chip" data-rentf="${t}" aria-pressed="${S.rentF===t}">${t}</button>`).join('')}</div>
+ <section class="panel list">${list.map((r,i)=>`<div class="li"><div class="ic b">${r.t==='Склады'?'СКЛ':r.t==='Офисы'?'ОФ':'КВ'}</div><div class="tx"><b>${r.name}</b><span>${r.city} · ${r.note}</span><div class="num" style="font-weight:800;margin-top:2px">${rub(r.price)} в месяц</div></div></div>`).join('')}</section>
+ <div class="btns"><button class="btn bronze" data-act="re" data-k="rent">Хочу снять</button><button class="btn ghost" data-act="re" data-k="rent">Хочу сдать</button></div>
+ <p class="hint">Склады удобно брать вместе с импортом: груз из Китая сразу едет на ваш склад. Все объекты и цены — пример.</p>`,{noTab:true});
+}
+const CITYM2={'Москва':310000,'Санкт-Петербург':225000,'Казань':175000,'Екатеринбург':150000,'Новосибирск':140000,'Краснодар':135000};
+let V={city:'Москва',m2:54,rooms:'2',cond:'1',house:'1'};
+function valuation(){
+ const sel=(id,opts,v)=>`<select class="inp" id="${id}">${opts.map(([k,t])=>`<option value="${k}" ${k==v?'selected':''}>${t}</option>`).join('')}</select>`;
+ return shell('Оценка квартиры',`<section class="panel" style="display:grid;gap:12px">
+  <label class="f">Город${sel('v-city',Object.keys(CITYM2).map(c=>[c,c]),V.city)}</label>
+  <div class="grid2"><label class="f">Площадь, м²<input class="inp num" id="v-m2" inputmode="decimal" value="${V.m2}"></label><label class="f">Комнат${sel('v-rooms',[['0','Студия'],['1','1'],['2','2'],['3','3+']],V.rooms)}</label></div>
+  <label class="f">Ремонт${sel('v-cond',[['0.9','Без ремонта'],['1','Хороший'],['1.12','Дизайнерский']],V.cond)}</label>
+  <label class="f">Дом${sel('v-house',[['0.94','Панель'],['1','Кирпич'],['1.05','Монолит, новый дом']],V.house)}</label></section>
+  <section class="panel total" id="v-out"></section>
+  <button class="btn bronze" data-act="re" data-k="sell">Заказать точную оценку и продажу</button>
+  <p class="hint">Средние цены за м² здесь условные, это пример. Точную оценку агент сделает по реальным сделкам в вашем доме.</p>`,{noTab:true});
+}
+function valOut(){
+ const g=id=>byId(id).value; V={city:g('v-city'),m2:g('v-m2'),rooms:g('v-rooms'),cond:g('v-cond'),house:g('v-house')};
+ const a=+String(V.m2).replace(',','.')||0, base=CITYM2[V.city]*a*(+V.cond)*(+V.house)*(V.rooms==='0'?1.08:1);
+ byId('v-out').innerHTML=`<div class="row between"><span class="muted small">Рыночная цена, оценка</span><span class="ex" style="background:rgba(255,255,255,.12);color:#9FD9C2">пример</span></div>
+  <div class="big num">${rub(Math.round(base/1e4)*1e4)}</div><div class="muted small num">диапазон ${rub(Math.round(base*0.94/1e4)*1e4)} – ${rub(Math.round(base*1.06/1e4)*1e4)}</div><hr>
+  <dl class="kv small num"><dt>Цена за м²</dt><dd>${rub(a?base/a:0)}</dd><dt>Срок продажи</dt><dd>${V.cond==='0.9'?'60–90':'30–60'} дней</dd></dl>`;
+}
+function taxPage(){
+ return shell('Налоговый вычет',`<section class="panel" style="display:grid;gap:12px">
+  <label class="f">Стоимость квартиры, ₽<input class="inp num" id="t-p" inputmode="numeric" value="12480000"></label>
+  <label class="f">Проценты по ипотеке за всё время, ₽<input class="inp num" id="t-i" inputmode="numeric" value="6400000"></label>
+  <label class="f">Ваша зарплата в месяц до вычета НДФЛ, ₽<input class="inp num" id="t-s" inputmode="numeric" value="180000"></label></section>
+  <section class="panel total" id="tx-out"></section>
+  <p class="hint">Расчёт упрощённый: вычет 13% с покупки до 2 млн ₽ и с процентов до 3 млн ₽. Ставки НДФЛ выше 13% и супруга не учтены. Это пример, не налоговая консультация.</p>
+  <button class="btn ghost" data-act="chat" data-id="RE-0021">Помочь оформить вычет</button>`,{noTab:true});
+}
+function taxOut(){
+ const g=id=>+String(byId(id).value).replace(/\s/g,'')||0;
+ const a=Math.min(g('t-p'),2e6)*0.13, b=Math.min(g('t-i'),3e6)*0.13, yr=g('t-s')*12*0.13, tot=a+b;
+ byId('tx-out').innerHTML=`<div class="muted small">Можно вернуть из бюджета</div><div class="big num">${rub(tot)}</div><hr>
+  <dl class="kv small num"><dt>За покупку</dt><dd>${rub(a)}</dd><dt>За проценты</dt><dd>${rub(b)}</dd><dt>В год получится до</dt><dd>${rub(yr)}</dd><dt>Вычет за покупку вернётся</dt><dd>${yr?'за '+Math.ceil(a/yr)+' г.':'—'}</dd><dt>За проценты</dt><dd>по мере выплаты</dd></dl>`;
+}
+function compare(){
+ const list=S.objects.filter(o=>S.favs.includes(o.id)).slice(0,3);
+ if(list.length<2) return shell('Сравнение',`<div class="panel empty">Отметьте сердцем хотя бы две квартиры в подборе, и мы покажем их здесь рядом для сравнения.</div><button class="btn bronze" data-tab="objects">Перейти в подбор</button>`,{noTab:true});
+ const rows=[['Цена',o=>o.price,rub,'min'],['Площадь',o=>o.m2,v=>String(v).replace('.',',')+' м²','max'],['За м²',o=>o.price/o.m2,v=>fmt(v)+' ₽','min'],['Комнат',o=>o.rooms,v=>v,''],['Этаж',o=>o.floor,v=>v,''],['Сдача',o=>o.ready,v=>v,''],['Платёж',o=>mPay(o.price*0.7,6,20),v=>rub(v)+'/мес','min']];
+ return shell('Сравнение',`<section class="panel tblwrap"><table class="cmp num"><tr><th></th>${list.map(o=>`<td><b>${o.zk.replace('ЖК ','')}</b></td>`).join('')}</tr>
+  ${rows.map(([n,f,fm,best])=>{const vals=list.map(f);const tgt=best==='min'?Math.min(...vals):best==='max'?Math.max(...vals):null;return `<tr><th>${n}</th>${vals.map(v=>`<td class="${v===tgt?'best':''}">${fm(v)}</td>`).join('')}</tr>`}).join('')}</table></section>
+  <p class="hint">Зелёным отмечено лучшее значение в строке. Платёж: взнос 30%, 6%, 20 лет, условно.</p>`,{noTab:true});
+}
+function guide(){
+ return shell('Как проходит сделка',`<section class="panel article">
+  <p><b>Покупка новостройки с нами занимает в среднем 3–6 недель от первого показа до регистрации договора.</b> Ниже по шагам: что делаем мы и где понадобится ваше участие.</p>
+  <h3>1. Подбор и показы</h3><p>Агент собирает подборку под бюджет и район, вы отмечаете понравившееся в приложении и записываетесь на показ.</p>
+  <h3>2. Бронь</h3><p>Застройщик держит квартиру за вами обычно 3–14 дней. Пока бронь действует, цена не меняется.</p>
+  <h3>3. Ипотека</h3><p>Подаём заявку сразу в несколько банков. От вас понадобятся только паспорт, СНИЛС и справка о доходах.</p>
+  <h3>4. Проверка и договор</h3><p>Юрист проверяет застройщика и проект ДДУ: разрешение на строительство, эскроу-счёт, сроки и штрафы.</p>
+  <h3>5. Регистрация</h3><p>Договор регистрируют в Росреестре электронно, это 5–9 рабочих дней. Деньги лежат на эскроу до сдачи дома.</p>
+  <h3>6. Ключи и вычет</h3><p>После сдачи дома подписываете акт приёма и получаете ключи. Затем помогаем вернуть налоговый вычет.</p>
+  <p class="small muted">Сроки ориентировочные и зависят от банка и застройщика.</p></section>
+  <button class="btn bronze" data-act="tax">Посчитать налоговый вычет</button>`,{noTab:true});
+}
+
+/* чат, поиск, уведомления, профиль */
+function chat(id){
+ const isRe=id.startsWith('RE'), who=isRe?'Олег, агент по недвижимости':'Анна, менеджер по импорту';
+ const msgs=S.chat[id]||(S.chat[id]=[{me:0,t:isRe?'Здравствуйте! Я Олег, веду вашу сделку '+id+'. Подберу время показа и отвечу по ипотеке.':'Здравствуйте! Я Анна, веду ваш заказ '+id+'. Пишите сюда, отвечу в рабочее время.',h:'сейчас'}]);
+ return shell('Чат · '+id,`<div class="small muted" style="text-align:center">${who} · переписка сохранится в сделке</div>
+  <div class="chat">${msgs.map(m=>`<div class="msg ${m.me?'me':'them'}">${esc(m.t)}<small>${m.h}</small></div>`).join('')}</div>
+  <form class="composer" id="chatf"><input class="inp" id="chat-in" placeholder="Сообщение" autocomplete="off"><button class="btn" type="submit">Отправить</button></form>`,{noTab:true});
+}
+function track(){
+ return shell('Найти груз',`<section class="panel" style="display:grid;gap:12px"><label class="f">Номер заказа или трек<input class="inp mono" id="t-in" placeholder="TRM-0142" value="TRM-0137"></label><button class="btn" data-act="dotrack">Найти</button></section><div id="t-out"></div>`,{noTab:true});
+}
+function notes(){
+ S.unread=0;
+ return shell('Уведомления',`<section class="panel list">${S.notes.map(n=>`<button class="li" ${n.re?'data-tab="deal"':`data-act="order" data-id="${n.o}"`}><div class="ic ${n.new?'b':''}">${n.new?'НОВ':'·'}</div><div class="tx"><b>${esc(n.t)}</b><span>${esc(n.d)} · ${n.h}</span></div>${I.chev}</button>`).join('')}</section>
+  <p class="hint">Эти же сообщения приходят в Telegram и MAX, если включить их в профиле.</p>`,{noTab:true});
+}
+function profile(){
+ const tg=(k,l,s)=>`<div class="row between" style="padding:10px 0;border-top:1px solid var(--line)"><div><b style="font-weight:600">${l}</b><div class="small muted">${s}</div></div><input type="checkbox" class="toggle" id="n-${k}" data-n="${k}" ${S.notify[k]?'checked':''} aria-label="${l}"></div>`;
+ const dirs=S.dirs||['imp'];
+ const paid=S.orders.reduce((a,o)=>a+o.paid,0);
+ const det=(title,sub,inner)=>`<details class="pf-d"><summary class="li"><div class="tx"><b>${title}</b><span>${sub}</span></div>${I.chev}</summary><div class="pf-in">${inner}</div></details>`;
+ const DIRS={imp:['Импорт из Китая','Анна, менеджер по импорту','TRM-0142'],re:['Недвижимость','Олег, агент по недвижимости','RE-0031']};
+ return shell('Профиль',`
+  <section class="panel pf-hero"><div class="pf-ava">СП</div>
+   <div class="pf-who"><b>Сергей Петров</b><span>владелец · ООО «Пример Трейд» <span class="ex">пример</span></span><span class="num">+7 912 345-67-89</span></div>
+   <div class="pf-stats"><div><b class="num">${S.orders.length}</b><span>заказа</span></div><div><b class="num">${(paid/1e6).toLocaleString('ru-RU',{maximumFractionDigits:2})} млн ₽</b><span>оплачено</span></div><div><b>с авг 2026</b><span>с Тримостом</span></div></div></section>
+  <div class="h2">Мои направления</div>
+  <section class="panel list">${['imp','re'].map(d=>dirs.includes(d)
+   ?`<button class="li" data-act="chat" data-id="${DIRS[d][2]}"><div class="ic ${d==='re'?'g':'b'}">${d==='re'?I.house:I.box}</div><div class="tx"><b>${DIRS[d][0]}</b><span>подключено · ${DIRS[d][1]}</span></div><span class="small muted">чат</span>${I.chev}</button>`
+   :`<div class="li"><div class="ic">${d==='re'?I.house:I.box}</div><div class="tx"><b>${DIRS[d][0]}</b><span>${d==='re'?'подбор квартиры, офиса или склада, ипотека':'поиск фабрики, доставка и растаможка'}</span></div><button class="btn sm" data-act="adddir" data-id="${d}">Подключить</button></div>`).join('')}</section>
+  <div class="h2">Данные</div>
+  <section class="panel list">
+   ${det('Личные данные','имя, телефон, почта, Telegram',`<dl class="kv small"><dt>ФИО</dt><dd>Петров Сергей Иванович</dd><dt>Телефон</dt><dd class="num">+7 912 345-67-89</dd><dt>Почта</dt><dd>s.petrov@example.ru</dd><dt>Telegram</dt><dd>@s_petrov</dd></dl><button class="btn ghost sm" data-act="soon" data-id="Изменение данных">Изменить</button>`)}
+   ${det('Компания и реквизиты','ИНН, банк, договор',`<dl class="kv small"><dt>Компания</dt><dd>ООО «Пример Трейд»</dd><dt>ИНН / КПП</dt><dd class="num">0000000000 / 000000000</dd><dt>ОГРН</dt><dd class="num">0000000000000</dd><dt>Адрес</dt><dd>г. Екатеринбург, ул. Примерная, 1</dd><dt>Банк</dt><dd>Пример-Банк, р/с ••• 4471</dd><dt>Договор</dt><dd>АГ-17/2026 от 29.08.2026</dd></dl><button class="btn ghost sm" data-act="sverka">Запросить акт сверки</button>`)}
+   ${det('Адреса доставки','2 адреса',`<div class="pf-addr"><b>Основной склад</b><span>Екатеринбург, ул. Складская, 12 · пн–пт 9–18</span></div><div class="pf-addr"><b>Магазин</b><span>Москва, ул. Торговая, 5 · приёмка с 10:00</span></div><button class="btn ghost sm" data-act="soon" data-id="Новый адрес">Добавить адрес</button>`)}
+  </section>
+  <div class="h2">Сотрудники с доступом</div>
+  <section class="panel list">
+   <div class="li"><div class="ic">СП</div><div class="tx"><b>Сергей Петров</b><span>владелец · всё</span></div></div>
+   <div class="li"><div class="ic">ЕК</div><div class="tx"><b>Елена Ким</b><span>бухгалтер · документы и счета</span></div></div>
+   <button class="li" data-act="invite"><div class="ic b">+</div><div class="tx"><b>Пригласить сотрудника</b><span>по номеру телефона</span></div>${I.chev}</button>
+  </section>
+  <div class="h2">Куда присылать уведомления</div>
+  <section class="panel" style="padding-block:6px">${tg('tg','Telegram','бот Тримост, смена этапа и документы')}${tg('max','MAX','тот же бот в MAX')}${tg('push','На телефон','уведомления приложения')}${tg('mail','Почта','только документы и счета')}</section>
+  <div class="h2">Безопасность</div>
+  <section class="panel list">
+   <div class="li"><div class="tx"><b>Вход по коду из СМС</b><span>пароль не нужен</span></div><span class="pill go">включён</span></div>
+   ${det('Устройства','2 активных входа',`<div class="pf-addr"><b>Этот телефон</b><span>приложение · сейчас</span></div><div class="pf-addr"><b>Компьютер</b><span>сайт trimost · вчера, 18:40</span></div><button class="btn ghost sm" data-act="soon" data-id="Выход на других устройствах">Выйти на других устройствах</button>`)}
+  </section>
+  <div class="h2">Помощь</div>
+  <section class="panel list">
+   <button class="li" data-act="chat" data-id="${DIRS[dirs[0]][2]}"><div class="tx"><b>Написать менеджеру</b><span>${DIRS[dirs[0]][1]}</span></div>${I.chev}</button>
+   <a class="li" href="tel:+70000000000"><div class="tx"><b>Позвонить</b><span class="num">+7 (000) 000-00-00 · пн–пт 9:00–19:00</span></div>${I.chev}</a>
+   <button class="li" data-act="guide"><div class="tx"><b>Как мы работаем</b><span>этапы, сроки, документы</span></div>${I.chev}</button>
+  </section>
+  <button class="btn ghost" data-act="logout">Выйти</button>
+  <p class="hint">Прототип клиентского приложения Тримост · данные — пример · версия 0.9</p>`);
+}
+function login(){
+ return `<div class="login wrap">${LOGO('mark')}
+  <div><h2>Кабинет клиента</h2><p>Заказы, документы и счета в одном месте</p></div>
+  <form class="card" id="loginf">
+   <div id="step1"><label class="f">Номер телефона<input class="inp num" id="l-ph" inputmode="tel" value="+7 900 123-45-67"></label></div>
+   <button class="btn" type="submit" id="l-go">Войти</button>
+   <button class="btn ghost" type="button" data-act="tglogin">Войти через Telegram</button>
+   <div class="hint">В прототипе вход без кода. В рабочей версии придёт код в СМС или Telegram</div>
+  </form>
+  <button class="link" data-act="track">Отследить груз без входа</button></div>`;
+}
+
+/* ───────── рендер ───────── */
+function render(){
+ app.dataset.anim=S.anim||'';S.anim='';
+ if(APP_DIR!=='both'){S.dir=APP_DIR;S.picked=true;S.doors=false}
+ if(!S.logged && !(S.stack.at(-1)?.screen==='track')){app.innerHTML=login();bindLogin();return}
+ if(!S.picked || S.doors){app.dataset.area=S.dir;app.innerHTML=doors();return}
+ const top=S.stack.at(-1);
+ let h;
+ if(top){
+  const f={order,chat,newreq,realty,re:reForm,track,notes,obj:objFull,book:bookShow,myshows:myShows,zklist:zkList,zk:zkView,rentlist:rentList,valuation,tax:taxPage,compare,guide,pay:payScreen}[top.screen];
+  h=f?f(top.arg):home();
+ } else h=(S.dir==='re'?{home:reHome,objects,deal,mort:mortTab,profile}:{home,orders,calc,docs,profile})[S.tab]();
+ app.dataset.area=S.dir;
+ app.innerHTML=h;
+ if(S.tab==='calc'&&!top) bindCalc();
+ if(byId('v-out')){['v-city','v-m2','v-rooms','v-cond','v-house'].forEach(id=>{byId(id).addEventListener('input',valOut);byId(id).addEventListener('change',valOut)});valOut()}
+ if(byId('tx-out')){['t-p','t-i','t-s'].forEach(id=>byId(id).addEventListener('input',taxOut));taxOut()}
+ const od=byId('od-down'); if(od) od.addEventListener('input',()=>{const P=+od.dataset.price,p=+od.value,dv=Math.round(P*p/100);byId('od-dv').textContent=p+'% · '+rub(dv);byId('od-pay').textContent=rub(mPay(P-dv,6,20))});
+ if(byId('m-out')){['m-p','m-d','m-r','m-y'].forEach(id=>document.getElementById(id).addEventListener('input',mortgage));mortgage()}
+ const cf=document.getElementById('chatf');
+ if(cf) cf.addEventListener('submit',e=>{e.preventDefault();const inp=document.getElementById('chat-in');const t=inp.value.trim();if(!t)return;const id=top.arg;
+  S.chat[id].push({me:1,t,h:'сейчас'});render();setTimeout(()=>{if(S.stack.at(-1)?.screen!=='chat')return;S.chat[id].push({me:0,t:'Приняла, посмотрю и отвечу. Это автоответ прототипа.',h:'сейчас'});render();window.scrollTo(0,document.body.scrollHeight)},1200);window.scrollTo(0,document.body.scrollHeight)});
+}
+function bindCalc(){
+ const rerender=()=>{ if(S.tab==='calc'&&!S.stack.length) render(); };
+ document.querySelectorAll('[data-cl]').forEach(inp=>inp.addEventListener('input',e=>{
+  const i=+e.target.dataset.cl, k=e.target.dataset.k;
+  Clines[i][k]=k==='name'?e.target.value:+e.target.value.replace(/\s/g,'').replace(',','.')||0;
+  byId('c-out').innerHTML=calcOut(ccompute(Cc.carrier));
+  document.querySelectorAll('[data-act="ccar"]').forEach((b,bi)=>{const t=b.querySelectorAll('b')[1];if(t){const x=ccompute(bi);t.textContent=rub(x.total);}});
+ }));
+ ['c-china','c-cert','c-svh','c-ru'].forEach(id=>{const el=byId(id);if(el)el.addEventListener('input',()=>{Cc[id.slice(2)]=+el.value.replace(/\s/g,'').replace(',','.')||0;byId('c-out').innerHTML=calcOut(ccompute(Cc.carrier));});});
+ const ins=byId('c-ins'); if(ins) ins.addEventListener('change',()=>{Cc.ins=ins.checked;rerender();});
+ document.querySelectorAll('[data-kind]').forEach(b=>b.addEventListener('click',()=>{Cc.kind=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(x=>x.setAttribute('aria-pressed',x===b));byId('c-out').innerHTML=calcOut(ccompute(Cc.carrier));}));
+}
+const byId=id=>document.getElementById(id);
+function bindLogin(){
+ const f=byId('loginf'); if(!f) return;
+ f.addEventListener('submit',e=>{e.preventDefault();
+  S.logged=true;S.anim='world';save();render();window.scrollTo(0,0);});
+}
+
+/* ───────── клики ───────── */
+document.addEventListener('click',e=>{
+ if(e.target.closest('.sheet')) return;
+ const t=e.target.closest('[data-tab]'); if(t){setTab(t.dataset.tab);return}
+ const dr=e.target.closest('[data-dir]'); if(dr){S.doors=false;setDir(dr.dataset.dir);return}
+ const bd=e.target.closest('[data-bkday]'); if(bd){S._bk.day=bd.dataset.bkday;S._bk.time='';render();return}
+ const bt=e.target.closest('[data-bktime]'); if(bt){if(bt.disabled)return;S._bk.time=bt.dataset.bktime;document.querySelectorAll('[data-bktime]').forEach(b=>b.setAttribute('aria-pressed',b===bt));return}
+ const rt=e.target.closest('[data-rentf]'); if(rt){S.rentF=rt.dataset.rentf;render();return}
+ const rf=e.target.closest('[data-roomf]'); if(rf){S.roomF=rf.dataset.roomf;render();return}
+ const mr=e.target.closest('[data-mrate]'); if(mr){byId('m-r').value=mr.dataset.mrate;mortgage();toast('Ставка '+mr.dataset.mrate+'% подставлена');return}
+ const fl=e.target.closest('[data-filter]'); if(fl){S.filter=fl.dataset.filter;render();return}
+ const df=e.target.closest('[data-docf]'); if(df){S.docFilter=df.dataset.docf;render();return}
+ const cp=e.target.closest('[data-copy]'); if(cp){const v=cp.dataset.copy;try{navigator.clipboard.writeText(v).then(()=>toast('Трек скопирован: '+v),()=>toast('Трек: '+v))}catch(_){toast('Трек: '+v)}return}
+ const a=e.target.closest('[data-act]'); if(!a) return;
+ const id=a.dataset.id;
+ switch(a.dataset.act){
+  case 'back':back();break;
+  case 'worlds':S.doors=true;S.anim='doors';render();window.scrollTo(0,0);break;
+  case 'worldsclose':S.doors=false;S.anim='tab';render();break;
+  case 'noop':{const g=a.closest('.seg');if(g){g.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',b===a))}break}
+  case 'order':go('order',id);break;
+  case 'chat':go('chat',id);break;
+  case 'notes':go('notes');break;
+  case 'newreq':go('newreq');break;
+  case 'realty':go('realty');break;
+  case 're':go('re',a.dataset.k);break;
+  case 'track':go('track');break;
+  case 'doc':docSheet(+a.dataset.i);break;
+  case 'obj':go('obj',id);break;
+  case 'fav':{const i=S.favs.indexOf(id);i<0?S.favs.push(id):S.favs.splice(i,1);save();render();toast(i<0?'Добавлено в избранное':'Убрано из избранного');break}
+  case 'show':case 'book':go('book',id);break;
+  case 'bkok':{if(!S._bk.time){toast('Пожалуйста, выберите удобное время показа');break}const o=S.objects.find(x=>x.id===id);S.shows=S.shows.filter(x=>x.obj!==id);S.shows.unshift({obj:id,zk:o.zk,flat:roomsTxt(o)+', '+m2(o)+' м²',day:S._bk.day,time:S._bk.time});
+   S.notes.unshift({t:'Показ назначен: '+o.zk,d:S._bk.day+', '+S._bk.time+'. Олег встретит вас у офиса продаж.',h:'сейчас',re:true,new:true});save();back();toast('Показ назначен: '+S._bk.day+', '+S._bk.time);break}
+  case 'myshows':go('myshows');break;case 'zklist':go('zklist');break;case 'zk':go('zk',id);break;case 'rentlist':go('rentlist');break;
+  case 'valuation':go('valuation');break;case 'tax':go('tax');break;case 'compare':go('compare');break;case 'guide':go('guide');break;
+  case 'fromcalc':{const r=ccompute(Cc.carrier);go('newreq',{what:Clines.map(x=>x.name).join(', ').slice(0,80),from:Cc.from,to:Cc.to,kg:Math.round(r.kg),m3:String(r.m3.toFixed(1)).replace('.',','),mode:r.c.mode,total:r.total});break}
+  case 'ccar':Cc.carrier=+a.dataset.i;render();break;
+  case 'cladd':Clines.push({name:'Новая позиция',qty:100,price:10,kg:50,m3:0.3,duty:5});render();break;
+  case 'cldel':Clines.splice(+a.dataset.i,1);render();break;
+  case 'sendreq':sendReq(a.dataset.mode);break;
+  case 'resend':S.stack=[];S.tab='home';S.dir='re';save();render();toast('Заявка отправлена, менеджер по недвижимости свяжется с вами');break;
+  case 'got':{const o=S.orders.find(x=>x.id===id);o.stage=8;o.dates[7]='сегодня';render();toast('Спасибо! Отметили получение');break}
+  case 'issue':{const o=S.orders.find(x=>x.id===id);o.issue=true;go('chat',id);S.chat[id].push({me:1,t:'Есть проблема с грузом: опишу и пришлю фото.',h:'сейчас'});render();break}
+  case 'pay':go('pay',id);break;
+  case 'payok':{const o=S.orders.find(x=>x.id===id);const debt=o.sum-o.paid;o.paid=o.sum;(o.pays=o.pays||[]).push({d:'сегодня',s:debt,m:'Оплата по счёту'});save();back();toast('Оплата отмечена — менеджер увидит и подтвердит');break}
+  case 'pack':toast('Соберём архив счетов, УПД и актов за период (в рабочей версии)');break;
+  case 'sverka':toast('Запрос на акт сверки отправлен менеджеру');break;
+  case 'adddir':S.dirs=(S.dirs||['imp']).concat(id);save();toast(id==='re'?'Недвижимость подключена, агент свяжется с вами':'Импорт подключён, менеджер свяжется с вами');render();break;
+  case 'soon':toast(id+' — в рабочей версии');break;
+  case 'invite':toast('Приглашение по номеру появится в рабочей версии');break;
+  case 'tglogin':S.logged=true;save();render();toast('Вход через Telegram (пример)');break;
+  case 'logout':S.logged=false;S.stack=[];S.tab='home';save();render();break;
+  case 'dotrack':{const q=byId('t-in').value.trim().toUpperCase();const o=S.orders.find(x=>x.id===q||x.track===q||x.track2===q);
+   byId('t-out').innerHTML=o?`<section class="panel" style="display:grid;gap:8px"><div class="row between"><span class="mono">${o.id}</span><span class="pill go">${cur(o)}</span></div><div class="small muted">${o.from} → ${o.to} · ${o.stage>=9?'получен':'план у вас '+o.plan}</div><div class="bar"><i style="width:${Math.round(Math.min(o.stage,9)/9*100)}%"></i></div><div class="hint" style="text-align:left">Без входа видно только этап. Суммы и документы — в кабинете.</div></section>`
+    :'<div class="panel empty">Такой заказ не нашли. Проверьте, пожалуйста, номер, например TRM-0142, TRM-0137 или TRM-0129</div>';break}
+ }
+});
+document.addEventListener('change',e=>{const n=e.target.dataset?.n;if(n){S.notify[n]=e.target.checked;save();toast((e.target.checked?'Включено: ':'Выключено: ')+e.target.getAttribute('aria-label'))}});
+render();
+})();
+</script>
+
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{})</script></body>
+</html>
